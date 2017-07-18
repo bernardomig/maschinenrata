@@ -9,55 +9,34 @@
 #include <stdint.h>
 
 /**
- * @brief
+ * @brief Enumeration with all the intersections possible.
  */
+typedef enum _intersection_t_ {
+  LEFT_TURN,
+  RIGHT_TURN,
+  LEFT_FORWARD_TURN,
+  RIGHT_FORWARD_TURN,
+  T_TURN,
+  CROSS_TURN,
+  BACK_TURN
+} intersection_t;
+
 typedef enum _direction_t_ {
   LEFT_DIR,
-  FRONT_DIR,
+  FORWARD_DIR,
   RIGHT_DIR,
   BACK_DIR
 } direction_t;
 
+typedef struct _node_t_
+{
+  direction_t last_took;
+  intersection_t type;
+};
+
 /**
- * @brief The size of the path, in number of intersections.
+ * @brief The size of the path, as max number of intersections.
  */
 #define PATH_SIZE 20
-
-/**
- * @brief Intersection possibilities
- */
-typedef enum _turn_t_ {
-  TURN_LEFT,     /**< Turns left. */
-  TURN_STRAIGHT, /**< Goes straight. */
-  TURN_RIGHT,    /**< Turns right. */
-  TURN_BACK      /**< Goes back. */
-} turn_t;
-
-/**
- * @brief Hold all the path information. Can be further optimized with
- * #path_optimise.
- */
-typedef struct _path_t_
-{
-  turn_t nodes[PATH_SIZE]; /**< The node array, containing all the
-                               intersections that the robot passed on. */
-  uint8_t current;         /**< Pointer containing the last intersection. Use
-                             #path_append to append a new intersection. */
-} path_t;
-
-/**
- * @brief Initializes the path to zero.
- * @param path The path to be initialized.
- */
-void
-path_init(path_t* path);
-
-/**
- * @brief Appends a turn to the path.
- * @param path The path.
- * @param trnn The turn to be appended.
- */
-void
-path_append(path_t* path, turn_t turn);
 
 #endif

@@ -52,9 +52,33 @@ loop()
     curr |= (LEFT | RIGHT);
   }
 
-  // detect a right turn
+  // detect a T turn
   if (((prev & RIGHT) && !(curr & RIGHT)) &&
-      (!(prev & LEFT) && !(curr & LEFT)) && !(curr & CENTERED)) {
+      ((prev & LEFT) && !(curr & LEFT)) && !(curr & CENTERED)) {
+    uart_puts("T\n");
+    motors_rotate_neg();
+    while ((linesensors_get() & LEFT))
+      ;
+    while (!(linesensors_get() & LEFT))
+      ;
+    while (!(linesensors_get() & ON_TRACK))
+      ;
+  }
+  // detect a cross
+  if (((prev & RIGHT) && !(curr & RIGHT)) &&
+      ((prev & LEFT) && !(curr & LEFT)) && (curr & CENTERED)) {
+    uart_puts("C\n");
+    motors_rotate_neg();
+    while ((linesensors_get() & LEFT))
+      ;
+    while (!(linesensors_get() & LEFT))
+      ;
+    while (!(linesensors_get() & ON_TRACK))
+      ;
+  }
+  // detect a right turn
+  else if (((prev & RIGHT) && !(curr & RIGHT)) &&
+           (!(prev & LEFT) && !(curr & LEFT)) && !(curr & CENTERED)) {
     uart_puts("R\n");
     motors_rotate_pos();
     while (!(linesensors_get() & LEFT_TILTED))
@@ -68,47 +92,48 @@ loop()
     while (!(linesensors_get() & RIGHT_TILTED))
       ;
   }
-  // detect a right and forward turn
+  // detect a left and front turn
   else if (((prev & LEFT) && !(curr & LEFT)) &&
            (!(prev & RIGHT) && !(curr & RIGHT)) && (curr & CENTERED)) {
-    uart_puts("RF\n");
+    uart_puts("LF\n");
     motors_rotate_neg();
-    while ((linesensors_get() & ON_TRACK))
+    while (!(linesensors_get() & RIGHT))
       ;
-    while (!(linesensors_get() & ON_TRACK))
+    while ((linesensors_get() & RIGHT))
+      ;
+    while (!(linesensors_get() & RIGHT))
+      ;
+    while (!(linesensors_get() & RIGHT_TILTED))
       ;
   }
-  // detect a left and forward turn
+  // detect a right and front turn
   else if (((prev & RIGHT) && !(curr & RIGHT)) &&
            (!(prev & LEFT) && !(curr & LEFT)) && (curr & CENTERED)) {
-    uart_puts("LF\n");
+    uart_puts("RF\n");
     motors_rotate_pos();
-    while ((linesensors_get() & ON_TRACK))
+    while (!(linesensors_get() & LEFT))
       ;
-    while (!(linesensors_get() & ON_TRACK))
+    while ((linesensors_get() & LEFT))
       ;
-  }
-  // detect a T turn
-  else if (((prev & RIGHT) && !(curr & RIGHT)) &&
-           ((prev & LEFT) && !(curr & LEFT)) && !(curr & CENTERED)) {
-    uart_puts("LR\n");
-    motors_rotate_pos();
-    while (!(linesensors_get() & ON_TRACK))
+    while (!(linesensors_get() & LEFT))
       ;
-  }
-  // detect a cross turn
-  else if (((prev & RIGHT) && !(curr & RIGHT)) &&
-           ((prev & LEFT) && !(curr & LEFT)) && (curr & CENTERED)) {
-    uart_puts("LFR\n");
-    motors_rotate_pos();
-    while ((linesensors_get() & ON_TRACK))
-      ;
-    while (!(linesensors_get() & ON_TRACK))
+    while (!(linesensors_get() & LEFT_TILTED))
       ;
   }
   // move if the right and left sensors are on
   else if (curr & (LEFT | RIGHT)) {
     motors_forward();
+  }
+  // detect a end turn (U-Turn)
+  else if (!(curr & CENTERED) && (prev & CENTERED)) {
+    uart_puts("B\n");
+    motors_rotate_pos();
+    while (!(linesensors_get() & RIGHT))
+      ;
+    while ((linesensors_get() & RIGHT))
+      ;
+    while (!(linesensors_get() & ON_TRACK))
+      ;
   }
   // move forward
   else if (curr & CENTERED) {
