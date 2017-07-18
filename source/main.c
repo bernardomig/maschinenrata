@@ -10,10 +10,7 @@
 #include "hardware/motors.h"
 #include "hardware/uart.h"
 
-void
-setup();
-void
-loop();
+#include "logic/main.h"
 
 int
 main()
@@ -72,20 +69,35 @@ void
 loop()
 {
   if (linesensors_get() & RIGHT) {
-    uart_puts("R\n");
     while (linesensors_get() & RIGHT) {
       motors_forward();
     }
-    while (!(linesensors_get() & ON_TRACK)) {
+    if (linesensors_get() & CENTERED) {
       motors_rotate_pos();
+      while (linesensors_get() & CENTERED)
+        ;
+      while (!(linesensors_get() & RIGHT_TILTED))
+        ;
+    } else {
+      motors_rotate_pos();
+      while (!(linesensors_get() & RIGHT_TILTED))
+        ;
     }
   } else if (linesensors_get() & LEFT) {
     uart_puts("L\n");
     while (linesensors_get() & LEFT) {
       motors_forward();
     }
-    while (!(linesensors_get() & ON_TRACK)) {
+    if (linesensors_get() & CENTERED) {
       motors_rotate_neg();
+      while (linesensors_get() & CENTERED)
+        ;
+      while (!(linesensors_get() & RIGHT_TILTED))
+        ;
+    } else {
+      motors_rotate_neg();
+      while (!(linesensors_get() & RIGHT_TILTED))
+        ;
     }
   } else if (linesensors_get() & CENTERED) {
     line_t ls = linesensors_get();
@@ -95,8 +107,7 @@ loop()
       motors_lean_neg();
     else
       motors_forward();
+  } else {
+    motors_reverse();
   }
-  // else {
-  //     motors_reverse();
-  // }
 }

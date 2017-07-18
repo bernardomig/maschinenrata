@@ -10,7 +10,7 @@
 
 #define UART_DEMULT (F_CPU / 16 / UART_BAUDRATE - 1)
 
-static uart_buffer uart_incoming, uart_outcoming;
+static uart_buffer_t uart_incoming, uart_outcoming;
 
 void
 uart_init()
