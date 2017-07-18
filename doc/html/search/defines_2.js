@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['rotate_5fspeed',['ROTATE_SPEED',['../motors_8h.html#a7b68e6d4467390702f67b508ad1389d9',1,'motors.h']]]
+  ['uart_5fbaudrate',['UART_BAUDRATE',['../config_8h.html#a2c7ed0283bd6f2f9d791860d6254ef4f',1,'config.h']]],
+  ['uart_5fbuffer_5fsize',['UART_BUFFER_SIZE',['../config_8h.html#a0d57378e32bf8278011460740bc29f7f',1,'config.h']]]
 ];

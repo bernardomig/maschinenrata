@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['left',['LEFT',['../linesensors_8h.html#ab8af100196e813e8f45013a015da1dc4adb45120aafd37a973140edee24708065',1,'linesensors.h']]],
-  ['left_5ftilted',['LEFT_TILTED',['../linesensors_8h.html#ab8af100196e813e8f45013a015da1dc4a7d1d1aa54aac4e3278b0addf08f4196a',1,'linesensors.h']]]
+  ['front_5fleft',['FRONT_LEFT',['../path_8h.html#a7c0743588cb6ceb494edc9898f8404bba3e4b80cb31443019e807a14549b1d2bd',1,'path.h']]],
+  ['front_5fright',['FRONT_RIGHT',['../path_8h.html#a7c0743588cb6ceb494edc9898f8404bbaae8a476ec2a06c02ffb4074660093318',1,'path.h']]]
 ];

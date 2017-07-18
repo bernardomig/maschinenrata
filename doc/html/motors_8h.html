@@ -64,7 +64,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -74,7 +73,8 @@ $(function() {
 
 <p>This controls the motors of the robot.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;avr/io.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
+<code>#include &lt;avr/io.h&gt;</code><br />
 </div>
 <p><a href="motors_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -82,13 +82,6 @@ $(function() {
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmotor__t.html">motor_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ac2cd96d53dd3ba6407db6766c3d92b26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motors_8h.html#ac2cd96d53dd3ba6407db6766c3d92b26">MAX_SPEED</a>&#160;&#160;&#160;120</td></tr>
-<tr class="separator:ac2cd96d53dd3ba6407db6766c3d92b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b68e6d4467390702f67b508ad1389d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motors_8h.html#a7b68e6d4467390702f67b508ad1389d9">ROTATE_SPEED</a>&#160;&#160;&#160;100</td></tr>
-<tr class="separator:a7b68e6d4467390702f67b508ad1389d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -120,36 +113,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This controls the motors of the robot. </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ac2cd96d53dd3ba6407db6766c3d92b26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2cd96d53dd3ba6407db6766c3d92b26">&#9670;&nbsp;</a></span>MAX_SPEED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_SPEED&#160;&#160;&#160;120</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7b68e6d4467390702f67b508ad1389d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b68e6d4467390702f67b508ad1389d9">&#9670;&nbsp;</a></span>ROTATE_SPEED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ROTATE_SPEED&#160;&#160;&#160;100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a0e26d42fdb50f88be4280b01386e22b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e26d42fdb50f88be4280b01386e22b9">&#9670;&nbsp;</a></span>motors_forward()</h2>
 

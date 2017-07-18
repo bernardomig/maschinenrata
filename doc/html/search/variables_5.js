@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['speed',['speed',['../structmotor__t.html#ab457d71ecef90c4a5bae83f96689d4fd',1,'motor_t']]]
+  ['nodes',['nodes',['../structpath__t.html#ad8a5978ac106f32b7a785e8a12ee8c5d',1,'path_t']]]
 ];

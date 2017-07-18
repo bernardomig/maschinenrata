@@ -1,20 +1,15 @@
 var searchData=
 [
-  ['max_5fspeed',['MAX_SPEED',['../motors_8h.html#ac2cd96d53dd3ba6407db6766c3d92b26',1,'motors.h']]],
-  ['mid',['mid',['../structlinesensors__t.html#ad9a25cdd83f3ad042741b945b8e33a8c',1,'linesensors_t']]],
-  ['midl',['midl',['../structlinesensors__t.html#ad6c8d2412227ccbd1e89e27f92e470b1',1,'linesensors_t']]],
-  ['midr',['midr',['../structlinesensors__t.html#a640beadb77352d1a7bdadcb33134a9b5',1,'linesensors_t']]],
-  ['motor_5fleft',['motor_left',['../motors_8h.html#a1cfe900abe75a3c2c4645bfef4d24063',1,'motors.h']]],
-  ['motor_5fright',['motor_right',['../motors_8h.html#a2c8b5031c9a4fc99e672384afdbcd859',1,'motors.h']]],
-  ['motor_5ft',['motor_t',['../structmotor__t.html',1,'']]],
-  ['motors_2eh',['motors.h',['../motors_8h.html',1,'']]],
-  ['motors_5fforward',['motors_forward',['../motors_8h.html#a0e26d42fdb50f88be4280b01386e22b9',1,'motors.h']]],
-  ['motors_5finit',['motors_init',['../motors_8h.html#ad522af7d5cf6fcbf8e873cb7a91df8f3',1,'motors.h']]],
-  ['motors_5flean_5fneg',['motors_lean_neg',['../motors_8h.html#aa31b54f243b0aeace652530bfa9db9cb',1,'motors.h']]],
-  ['motors_5flean_5fpos',['motors_lean_pos',['../motors_8h.html#abcf065138a25f5891483ca2463fda565',1,'motors.h']]],
-  ['motors_5freverse',['motors_reverse',['../motors_8h.html#a3c8c4545b2ddadea9f3e5506a1fd312d',1,'motors.h']]],
-  ['motors_5frotate_5fneg',['motors_rotate_neg',['../motors_8h.html#aef95fa62d59fca0607e8094639142f92',1,'motors.h']]],
-  ['motors_5frotate_5fpos',['motors_rotate_pos',['../motors_8h.html#ab517ffaabd7a045ea538eb82fee24052',1,'motors.h']]],
-  ['motors_5fstop',['motors_stop',['../motors_8h.html#a2028f6e7acaeca3139534961fb804889',1,'motors.h']]],
-  ['motors_5fupdate',['motors_update',['../motors_8h.html#ad73cef44d9252c16f67e98f8133fcc36',1,'motors.h']]]
+  ['left',['left',['../structlinesensors__t.html#ad11a86c23d95d4ba499db331a10e730a',1,'linesensors_t::left()'],['../linesensors_8h.html#ab8af100196e813e8f45013a015da1dc4adb45120aafd37a973140edee24708065',1,'LEFT():&#160;linesensors.h']]],
+  ['left_5ftilted',['LEFT_TILTED',['../linesensors_8h.html#ab8af100196e813e8f45013a015da1dc4a7d1d1aa54aac4e3278b0addf08f4196a',1,'linesensors.h']]],
+  ['line_5fstatus',['line_status',['../linesensors_8h.html#ab8af100196e813e8f45013a015da1dc4',1,'linesensors.h']]],
+  ['line_5ft',['line_t',['../linesensors_8h.html#aa570a98ad2a1717ec74ea1d1a917c3b2',1,'linesensors.h']]],
+  ['linesensors',['linesensors',['../linesensors_8h.html#afd2bcd8421bcac05d90145ffe584748a',1,'linesensors.h']]],
+  ['linesensors_2eh',['linesensors.h',['../linesensors_8h.html',1,'']]],
+  ['linesensors_5fget',['linesensors_get',['../linesensors_8h.html#a54fcf6b407c273308bf9b0a961570668',1,'linesensors.h']]],
+  ['linesensors_5finit',['linesensors_init',['../linesensors_8h.html#a837013f1a9236b2adac3ec50adc78d30',1,'linesensors.h']]],
+  ['linesensors_5fset_5fthreshold',['linesensors_set_threshold',['../linesensors_8h.html#a444aa45963975b3bb6b7ae4bf0468d25',1,'linesensors.h']]],
+  ['linesensors_5ft',['linesensors_t',['../structlinesensors__t.html',1,'']]],
+  ['linesensors_5fupdate',['linesensors_update',['../linesensors_8h.html#a43bbfa9ed7dd77f2a884831716f889e9',1,'linesensors.h']]],
+  ['loop',['loop',['../main_8h.html#afe461d27b9c48d5921c00d521181f12f',1,'main.h']]]
 ];

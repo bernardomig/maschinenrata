@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['direction',['direction',['../structmotor__t.html#ac14914d6c6a48f5762dad1cc9f74268d',1,'motor_t']]]
+  ['current',['current',['../structpath__t.html#ac68ea261dcfe9d381c608fe5183efa9f',1,'path_t']]]
 ];
