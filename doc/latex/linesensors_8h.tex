@@ -1,0 +1,196 @@
+\hypertarget{linesensors_8h}{}\section{include/hardware/linesensors.h File Reference}
+\label{linesensors_8h}\index{include/hardware/linesensors.\+h@{include/hardware/linesensors.\+h}}
+
+
+Functions to control the linesensors.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structlinesensors__t}{linesensors\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Stores the raw sensor data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint8\+\_\+t \hyperlink{linesensors_8h_aa570a98ad2a1717ec74ea1d1a917c3b2}{line\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Stores the boolean state of the line sensors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{linesensors_8h_ab8af100196e813e8f45013a015da1dc4}{line\+\_\+status} \{ \newline
+\hyperlink{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a64dec3992d128eb947b5210be53f3275}{A\+L\+L\+\_\+\+O\+FF} = 0b00000, 
+\hyperlink{linesensors_8h_ab8af100196e813e8f45013a015da1dc4ad6559206fa18d70e41882be07ac8dbe6}{A\+L\+L\+\_\+\+ON} = 0b11111, 
+\hyperlink{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a1f9aa4684c7aac17f03de7970734f702}{O\+N\+\_\+\+T\+R\+A\+CK} = 0b00100, 
+\hyperlink{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a53f811bc46dd28493ccb7260b2cc8f38}{C\+E\+N\+T\+E\+R\+ED} = 0b01110, 
+\newline
+\hyperlink{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a1965340cd4a127ca8890921d77843b24}{R\+I\+G\+H\+T\+\_\+\+T\+I\+L\+T\+ED} = 0b01000, 
+\hyperlink{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a7d1d1aa54aac4e3278b0addf08f4196a}{L\+E\+F\+T\+\_\+\+T\+I\+L\+T\+ED} = 0b00010, 
+\hyperlink{linesensors_8h_ab8af100196e813e8f45013a015da1dc4aec8379af7490bb9eaaf579cf17876f38}{R\+I\+G\+HT} = 0b10000, 
+\hyperlink{linesensors_8h_ab8af100196e813e8f45013a015da1dc4adb45120aafd37a973140edee24708065}{L\+E\+FT} = 0b00001
+ \}\begin{DoxyCompactList}\small\item\em Stores recurrent sensor status. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{linesensors_8h_a837013f1a9236b2adac3ec50adc78d30}{linesensors\+\_\+init} ()
+\begin{DoxyCompactList}\small\item\em Initializes the line sensors. \end{DoxyCompactList}\item 
+void \hyperlink{linesensors_8h_a43bbfa9ed7dd77f2a884831716f889e9}{linesensors\+\_\+update} ()
+\begin{DoxyCompactList}\small\item\em Reads all the sensors and updates \hyperlink{linesensors_8h_afd2bcd8421bcac05d90145ffe584748a}{linesensors}. \end{DoxyCompactList}\item 
+void \hyperlink{linesensors_8h_a444aa45963975b3bb6b7ae4bf0468d25}{linesensors\+\_\+set\+\_\+threshold} (\hyperlink{structlinesensors__t}{linesensors\+\_\+t} threshold)
+\begin{DoxyCompactList}\small\item\em Sets the threadhold for each sensor. \end{DoxyCompactList}\item 
+\hyperlink{linesensors_8h_aa570a98ad2a1717ec74ea1d1a917c3b2}{line\+\_\+t} \hyperlink{linesensors_8h_a54fcf6b407c273308bf9b0a961570668}{linesensors\+\_\+get} ()
+\begin{DoxyCompactList}\small\item\em Get the boolean values of the sensors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structlinesensors__t}{linesensors\+\_\+t} \hyperlink{linesensors_8h_afd2bcd8421bcac05d90145ffe584748a}{linesensors}
+\begin{DoxyCompactList}\small\item\em Variable that stores the current value of the sensors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to control the linesensors. 
+
+This contains all the functions to interface with the line sensors. Usage example\+: 
+\begin{DoxyCode}
+\hyperlink{linesensors_8h_aa570a98ad2a1717ec74ea1d1a917c3b2}{line\_t} ls = \hyperlink{linesensors_8h_a54fcf6b407c273308bf9b0a961570668}{linesensors\_get}();
+\textcolor{keywordflow}{if}(ls & RIGHT) \{
+  \textcolor{comment}{// do something, like rotating right.}
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{linesensors_8h_aa570a98ad2a1717ec74ea1d1a917c3b2}\label{linesensors_8h_aa570a98ad2a1717ec74ea1d1a917c3b2}} 
+\index{linesensors.\+h@{linesensors.\+h}!line\+\_\+t@{line\+\_\+t}}
+\index{line\+\_\+t@{line\+\_\+t}!linesensors.\+h@{linesensors.\+h}}
+\subsubsection{\texorpdfstring{line\+\_\+t}{line\_t}}
+{\footnotesize\ttfamily typedef uint8\+\_\+t \hyperlink{linesensors_8h_aa570a98ad2a1717ec74ea1d1a917c3b2}{line\+\_\+t}}
+
+
+
+Stores the boolean state of the line sensors. 
+
+Each bit of this integer represents a sensor state. The most significant is the right sensor and the least significant is the left sensor. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{linesensors_8h_ab8af100196e813e8f45013a015da1dc4}\label{linesensors_8h_ab8af100196e813e8f45013a015da1dc4}} 
+\index{linesensors.\+h@{linesensors.\+h}!line\+\_\+status@{line\+\_\+status}}
+\index{line\+\_\+status@{line\+\_\+status}!linesensors.\+h@{linesensors.\+h}}
+\subsubsection{\texorpdfstring{line\+\_\+status}{line\_status}}
+{\footnotesize\ttfamily enum \hyperlink{linesensors_8h_ab8af100196e813e8f45013a015da1dc4}{line\+\_\+status}}
+
+
+
+Stores recurrent sensor status. 
+
+A enumeration of useful constants that can be used to check for recurrent sensor states. Usually is used in conjunction with the binary and (\&) to check the state, for example,
+\begin{DoxyCode}
+linesensor\_get() & \hyperlink{linesensors_8h_ab8af100196e813e8f45013a015da1dc4adb45120aafd37a973140edee24708065}{LEFT} 
+\end{DoxyCode}
+ checks if the left sensor is triggered. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+L\+L\+\_\+\+O\+FF@{A\+L\+L\+\_\+\+O\+FF}!linesensors.\+h@{linesensors.\+h}}\index{linesensors.\+h@{linesensors.\+h}!A\+L\+L\+\_\+\+O\+FF@{A\+L\+L\+\_\+\+O\+FF}}}\mbox{\Hypertarget{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a64dec3992d128eb947b5210be53f3275}\label{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a64dec3992d128eb947b5210be53f3275}} 
+A\+L\+L\+\_\+\+O\+FF&All sensors are off. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+L\+L\+\_\+\+ON@{A\+L\+L\+\_\+\+ON}!linesensors.\+h@{linesensors.\+h}}\index{linesensors.\+h@{linesensors.\+h}!A\+L\+L\+\_\+\+ON@{A\+L\+L\+\_\+\+ON}}}\mbox{\Hypertarget{linesensors_8h_ab8af100196e813e8f45013a015da1dc4ad6559206fa18d70e41882be07ac8dbe6}\label{linesensors_8h_ab8af100196e813e8f45013a015da1dc4ad6559206fa18d70e41882be07ac8dbe6}} 
+A\+L\+L\+\_\+\+ON&All sensors are on. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+N\+\_\+\+T\+R\+A\+CK@{O\+N\+\_\+\+T\+R\+A\+CK}!linesensors.\+h@{linesensors.\+h}}\index{linesensors.\+h@{linesensors.\+h}!O\+N\+\_\+\+T\+R\+A\+CK@{O\+N\+\_\+\+T\+R\+A\+CK}}}\mbox{\Hypertarget{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a1f9aa4684c7aac17f03de7970734f702}\label{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a1f9aa4684c7aac17f03de7970734f702}} 
+O\+N\+\_\+\+T\+R\+A\+CK&The mid sensor is on. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+E\+N\+T\+E\+R\+ED@{C\+E\+N\+T\+E\+R\+ED}!linesensors.\+h@{linesensors.\+h}}\index{linesensors.\+h@{linesensors.\+h}!C\+E\+N\+T\+E\+R\+ED@{C\+E\+N\+T\+E\+R\+ED}}}\mbox{\Hypertarget{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a53f811bc46dd28493ccb7260b2cc8f38}\label{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a53f811bc46dd28493ccb7260b2cc8f38}} 
+C\+E\+N\+T\+E\+R\+ED&The mid sensors are on. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+I\+G\+H\+T\+\_\+\+T\+I\+L\+T\+ED@{R\+I\+G\+H\+T\+\_\+\+T\+I\+L\+T\+ED}!linesensors.\+h@{linesensors.\+h}}\index{linesensors.\+h@{linesensors.\+h}!R\+I\+G\+H\+T\+\_\+\+T\+I\+L\+T\+ED@{R\+I\+G\+H\+T\+\_\+\+T\+I\+L\+T\+ED}}}\mbox{\Hypertarget{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a1965340cd4a127ca8890921d77843b24}\label{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a1965340cd4a127ca8890921d77843b24}} 
+R\+I\+G\+H\+T\+\_\+\+T\+I\+L\+T\+ED&The mid-\/right sensor is on. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+E\+F\+T\+\_\+\+T\+I\+L\+T\+ED@{L\+E\+F\+T\+\_\+\+T\+I\+L\+T\+ED}!linesensors.\+h@{linesensors.\+h}}\index{linesensors.\+h@{linesensors.\+h}!L\+E\+F\+T\+\_\+\+T\+I\+L\+T\+ED@{L\+E\+F\+T\+\_\+\+T\+I\+L\+T\+ED}}}\mbox{\Hypertarget{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a7d1d1aa54aac4e3278b0addf08f4196a}\label{linesensors_8h_ab8af100196e813e8f45013a015da1dc4a7d1d1aa54aac4e3278b0addf08f4196a}} 
+L\+E\+F\+T\+\_\+\+T\+I\+L\+T\+ED&The mid-\/left sensor is on. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+I\+G\+HT@{R\+I\+G\+HT}!linesensors.\+h@{linesensors.\+h}}\index{linesensors.\+h@{linesensors.\+h}!R\+I\+G\+HT@{R\+I\+G\+HT}}}\mbox{\Hypertarget{linesensors_8h_ab8af100196e813e8f45013a015da1dc4aec8379af7490bb9eaaf579cf17876f38}\label{linesensors_8h_ab8af100196e813e8f45013a015da1dc4aec8379af7490bb9eaaf579cf17876f38}} 
+R\+I\+G\+HT&The right sensor is on. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+E\+FT@{L\+E\+FT}!linesensors.\+h@{linesensors.\+h}}\index{linesensors.\+h@{linesensors.\+h}!L\+E\+FT@{L\+E\+FT}}}\mbox{\Hypertarget{linesensors_8h_ab8af100196e813e8f45013a015da1dc4adb45120aafd37a973140edee24708065}\label{linesensors_8h_ab8af100196e813e8f45013a015da1dc4adb45120aafd37a973140edee24708065}} 
+L\+E\+FT&The left sensor is on. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{linesensors_8h_a54fcf6b407c273308bf9b0a961570668}\label{linesensors_8h_a54fcf6b407c273308bf9b0a961570668}} 
+\index{linesensors.\+h@{linesensors.\+h}!linesensors\+\_\+get@{linesensors\+\_\+get}}
+\index{linesensors\+\_\+get@{linesensors\+\_\+get}!linesensors.\+h@{linesensors.\+h}}
+\subsubsection{\texorpdfstring{linesensors\+\_\+get()}{linesensors\_get()}}
+{\footnotesize\ttfamily \hyperlink{linesensors_8h_aa570a98ad2a1717ec74ea1d1a917c3b2}{line\+\_\+t} linesensors\+\_\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the boolean values of the sensors. 
+
+\begin{DoxyReturn}{Returns}
+the boolean output. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{linesensors_8h_a837013f1a9236b2adac3ec50adc78d30}\label{linesensors_8h_a837013f1a9236b2adac3ec50adc78d30}} 
+\index{linesensors.\+h@{linesensors.\+h}!linesensors\+\_\+init@{linesensors\+\_\+init}}
+\index{linesensors\+\_\+init@{linesensors\+\_\+init}!linesensors.\+h@{linesensors.\+h}}
+\subsubsection{\texorpdfstring{linesensors\+\_\+init()}{linesensors\_init()}}
+{\footnotesize\ttfamily void linesensors\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the line sensors. 
+
+Initializes the A\+DC of the m328p to read the analog values of the pins P\+B0-\/\+P\+B4. The following configurations were done\+:
+\begin{DoxyItemize}
+\item resolution of the A\+DC\+: 8bit;
+\item clock divider\+: C\+L\+K/256; 
+\end{DoxyItemize}\mbox{\Hypertarget{linesensors_8h_a444aa45963975b3bb6b7ae4bf0468d25}\label{linesensors_8h_a444aa45963975b3bb6b7ae4bf0468d25}} 
+\index{linesensors.\+h@{linesensors.\+h}!linesensors\+\_\+set\+\_\+threshold@{linesensors\+\_\+set\+\_\+threshold}}
+\index{linesensors\+\_\+set\+\_\+threshold@{linesensors\+\_\+set\+\_\+threshold}!linesensors.\+h@{linesensors.\+h}}
+\subsubsection{\texorpdfstring{linesensors\+\_\+set\+\_\+threshold()}{linesensors\_set\_threshold()}}
+{\footnotesize\ttfamily void linesensors\+\_\+set\+\_\+threshold (\begin{DoxyParamCaption}\item[{\hyperlink{structlinesensors__t}{linesensors\+\_\+t}}]{threshold }\end{DoxyParamCaption})}
+
+
+
+Sets the threadhold for each sensor. 
+
+When the function \hyperlink{linesensors_8h_a54fcf6b407c273308bf9b0a961570668}{linesensors\+\_\+get} is called, this threshold level is used to create the boolean output of each sensor. Each sensor value is compared to the threshold, and is evaluated to true if it is bigger than the threshold. There are 5 thresholds, each one for each sensor, for better control.
+
+
+\begin{DoxyParams}{Parameters}
+{\em threshold} & The threshold value, that will be copied to a static variable. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{linesensors_8h_a43bbfa9ed7dd77f2a884831716f889e9}\label{linesensors_8h_a43bbfa9ed7dd77f2a884831716f889e9}} 
+\index{linesensors.\+h@{linesensors.\+h}!linesensors\+\_\+update@{linesensors\+\_\+update}}
+\index{linesensors\+\_\+update@{linesensors\+\_\+update}!linesensors.\+h@{linesensors.\+h}}
+\subsubsection{\texorpdfstring{linesensors\+\_\+update()}{linesensors\_update()}}
+{\footnotesize\ttfamily void linesensors\+\_\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads all the sensors and updates \hyperlink{linesensors_8h_afd2bcd8421bcac05d90145ffe584748a}{linesensors}. 
+
+All the line sensors are read sequentially from the left to the right and the raw value of each is stored in the global variable \hyperlink{linesensors_8h_afd2bcd8421bcac05d90145ffe584748a}{linesensors}. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{linesensors_8h_afd2bcd8421bcac05d90145ffe584748a}\label{linesensors_8h_afd2bcd8421bcac05d90145ffe584748a}} 
+\index{linesensors.\+h@{linesensors.\+h}!linesensors@{linesensors}}
+\index{linesensors@{linesensors}!linesensors.\+h@{linesensors.\+h}}
+\subsubsection{\texorpdfstring{linesensors}{linesensors}}
+{\footnotesize\ttfamily \hyperlink{structlinesensors__t}{linesensors\+\_\+t} linesensors}
+
+
+
+Variable that stores the current value of the sensors. 
+
+Global variable that stores the current value of the sensors. Only updates when a call to \hyperlink{linesensors_8h_a43bbfa9ed7dd77f2a884831716f889e9}{linesensors\+\_\+update} is done. 

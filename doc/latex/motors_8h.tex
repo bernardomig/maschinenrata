@@ -1,0 +1,140 @@
+\hypertarget{motors_8h}{}\section{include/hardware/motors.h File Reference}
+\label{motors_8h}\index{include/hardware/motors.\+h@{include/hardware/motors.\+h}}
+
+
+This controls the motors of the robot.  
+
+
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmotor__t}{motor\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{motors_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{M\+A\+X\+\_\+\+S\+P\+E\+ED}~120
+\item 
+\#define \hyperlink{motors_8h_a7b68e6d4467390702f67b508ad1389d9}{R\+O\+T\+A\+T\+E\+\_\+\+S\+P\+E\+ED}~100
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{motors_8h_ad522af7d5cf6fcbf8e873cb7a91df8f3}{motors\+\_\+init} ()
+\item 
+void \hyperlink{motors_8h_ad73cef44d9252c16f67e98f8133fcc36}{motors\+\_\+update} ()
+\item 
+void \hyperlink{motors_8h_a0e26d42fdb50f88be4280b01386e22b9}{motors\+\_\+forward} ()
+\item 
+void \hyperlink{motors_8h_a3c8c4545b2ddadea9f3e5506a1fd312d}{motors\+\_\+reverse} ()
+\item 
+void \hyperlink{motors_8h_a2028f6e7acaeca3139534961fb804889}{motors\+\_\+stop} ()
+\item 
+void \hyperlink{motors_8h_abcf065138a25f5891483ca2463fda565}{motors\+\_\+lean\+\_\+pos} ()
+\item 
+void \hyperlink{motors_8h_aa31b54f243b0aeace652530bfa9db9cb}{motors\+\_\+lean\+\_\+neg} ()
+\item 
+void \hyperlink{motors_8h_ab517ffaabd7a045ea538eb82fee24052}{motors\+\_\+rotate\+\_\+pos} ()
+\item 
+void \hyperlink{motors_8h_aef95fa62d59fca0607e8094639142f92}{motors\+\_\+rotate\+\_\+neg} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmotor__t}{motor\+\_\+t} \hyperlink{motors_8h_a1cfe900abe75a3c2c4645bfef4d24063}{motor\+\_\+left}
+\item 
+\hyperlink{structmotor__t}{motor\+\_\+t} \hyperlink{motors_8h_a2c8b5031c9a4fc99e672384afdbcd859}{motor\+\_\+right}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This controls the motors of the robot. 
+
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{motors_8h_ac2cd96d53dd3ba6407db6766c3d92b26}\label{motors_8h_ac2cd96d53dd3ba6407db6766c3d92b26}} 
+\index{motors.\+h@{motors.\+h}!M\+A\+X\+\_\+\+S\+P\+E\+ED@{M\+A\+X\+\_\+\+S\+P\+E\+ED}}
+\index{M\+A\+X\+\_\+\+S\+P\+E\+ED@{M\+A\+X\+\_\+\+S\+P\+E\+ED}!motors.\+h@{motors.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+S\+P\+E\+ED}{MAX\_SPEED}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+S\+P\+E\+ED~120}
+
+\mbox{\Hypertarget{motors_8h_a7b68e6d4467390702f67b508ad1389d9}\label{motors_8h_a7b68e6d4467390702f67b508ad1389d9}} 
+\index{motors.\+h@{motors.\+h}!R\+O\+T\+A\+T\+E\+\_\+\+S\+P\+E\+ED@{R\+O\+T\+A\+T\+E\+\_\+\+S\+P\+E\+ED}}
+\index{R\+O\+T\+A\+T\+E\+\_\+\+S\+P\+E\+ED@{R\+O\+T\+A\+T\+E\+\_\+\+S\+P\+E\+ED}!motors.\+h@{motors.\+h}}
+\subsubsection{\texorpdfstring{R\+O\+T\+A\+T\+E\+\_\+\+S\+P\+E\+ED}{ROTATE\_SPEED}}
+{\footnotesize\ttfamily \#define R\+O\+T\+A\+T\+E\+\_\+\+S\+P\+E\+ED~100}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{motors_8h_a0e26d42fdb50f88be4280b01386e22b9}\label{motors_8h_a0e26d42fdb50f88be4280b01386e22b9}} 
+\index{motors.\+h@{motors.\+h}!motors\+\_\+forward@{motors\+\_\+forward}}
+\index{motors\+\_\+forward@{motors\+\_\+forward}!motors.\+h@{motors.\+h}}
+\subsubsection{\texorpdfstring{motors\+\_\+forward()}{motors\_forward()}}
+{\footnotesize\ttfamily void motors\+\_\+forward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{motors_8h_ad522af7d5cf6fcbf8e873cb7a91df8f3}\label{motors_8h_ad522af7d5cf6fcbf8e873cb7a91df8f3}} 
+\index{motors.\+h@{motors.\+h}!motors\+\_\+init@{motors\+\_\+init}}
+\index{motors\+\_\+init@{motors\+\_\+init}!motors.\+h@{motors.\+h}}
+\subsubsection{\texorpdfstring{motors\+\_\+init()}{motors\_init()}}
+{\footnotesize\ttfamily void motors\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{motors_8h_aa31b54f243b0aeace652530bfa9db9cb}\label{motors_8h_aa31b54f243b0aeace652530bfa9db9cb}} 
+\index{motors.\+h@{motors.\+h}!motors\+\_\+lean\+\_\+neg@{motors\+\_\+lean\+\_\+neg}}
+\index{motors\+\_\+lean\+\_\+neg@{motors\+\_\+lean\+\_\+neg}!motors.\+h@{motors.\+h}}
+\subsubsection{\texorpdfstring{motors\+\_\+lean\+\_\+neg()}{motors\_lean\_neg()}}
+{\footnotesize\ttfamily void motors\+\_\+lean\+\_\+neg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{motors_8h_abcf065138a25f5891483ca2463fda565}\label{motors_8h_abcf065138a25f5891483ca2463fda565}} 
+\index{motors.\+h@{motors.\+h}!motors\+\_\+lean\+\_\+pos@{motors\+\_\+lean\+\_\+pos}}
+\index{motors\+\_\+lean\+\_\+pos@{motors\+\_\+lean\+\_\+pos}!motors.\+h@{motors.\+h}}
+\subsubsection{\texorpdfstring{motors\+\_\+lean\+\_\+pos()}{motors\_lean\_pos()}}
+{\footnotesize\ttfamily void motors\+\_\+lean\+\_\+pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{motors_8h_a3c8c4545b2ddadea9f3e5506a1fd312d}\label{motors_8h_a3c8c4545b2ddadea9f3e5506a1fd312d}} 
+\index{motors.\+h@{motors.\+h}!motors\+\_\+reverse@{motors\+\_\+reverse}}
+\index{motors\+\_\+reverse@{motors\+\_\+reverse}!motors.\+h@{motors.\+h}}
+\subsubsection{\texorpdfstring{motors\+\_\+reverse()}{motors\_reverse()}}
+{\footnotesize\ttfamily void motors\+\_\+reverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{motors_8h_aef95fa62d59fca0607e8094639142f92}\label{motors_8h_aef95fa62d59fca0607e8094639142f92}} 
+\index{motors.\+h@{motors.\+h}!motors\+\_\+rotate\+\_\+neg@{motors\+\_\+rotate\+\_\+neg}}
+\index{motors\+\_\+rotate\+\_\+neg@{motors\+\_\+rotate\+\_\+neg}!motors.\+h@{motors.\+h}}
+\subsubsection{\texorpdfstring{motors\+\_\+rotate\+\_\+neg()}{motors\_rotate\_neg()}}
+{\footnotesize\ttfamily void motors\+\_\+rotate\+\_\+neg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{motors_8h_ab517ffaabd7a045ea538eb82fee24052}\label{motors_8h_ab517ffaabd7a045ea538eb82fee24052}} 
+\index{motors.\+h@{motors.\+h}!motors\+\_\+rotate\+\_\+pos@{motors\+\_\+rotate\+\_\+pos}}
+\index{motors\+\_\+rotate\+\_\+pos@{motors\+\_\+rotate\+\_\+pos}!motors.\+h@{motors.\+h}}
+\subsubsection{\texorpdfstring{motors\+\_\+rotate\+\_\+pos()}{motors\_rotate\_pos()}}
+{\footnotesize\ttfamily void motors\+\_\+rotate\+\_\+pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{motors_8h_a2028f6e7acaeca3139534961fb804889}\label{motors_8h_a2028f6e7acaeca3139534961fb804889}} 
+\index{motors.\+h@{motors.\+h}!motors\+\_\+stop@{motors\+\_\+stop}}
+\index{motors\+\_\+stop@{motors\+\_\+stop}!motors.\+h@{motors.\+h}}
+\subsubsection{\texorpdfstring{motors\+\_\+stop()}{motors\_stop()}}
+{\footnotesize\ttfamily void motors\+\_\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{motors_8h_ad73cef44d9252c16f67e98f8133fcc36}\label{motors_8h_ad73cef44d9252c16f67e98f8133fcc36}} 
+\index{motors.\+h@{motors.\+h}!motors\+\_\+update@{motors\+\_\+update}}
+\index{motors\+\_\+update@{motors\+\_\+update}!motors.\+h@{motors.\+h}}
+\subsubsection{\texorpdfstring{motors\+\_\+update()}{motors\_update()}}
+{\footnotesize\ttfamily void motors\+\_\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{motors_8h_a1cfe900abe75a3c2c4645bfef4d24063}\label{motors_8h_a1cfe900abe75a3c2c4645bfef4d24063}} 
+\index{motors.\+h@{motors.\+h}!motor\+\_\+left@{motor\+\_\+left}}
+\index{motor\+\_\+left@{motor\+\_\+left}!motors.\+h@{motors.\+h}}
+\subsubsection{\texorpdfstring{motor\+\_\+left}{motor\_left}}
+{\footnotesize\ttfamily \hyperlink{structmotor__t}{motor\+\_\+t} motor\+\_\+left}
+
+\mbox{\Hypertarget{motors_8h_a2c8b5031c9a4fc99e672384afdbcd859}\label{motors_8h_a2c8b5031c9a4fc99e672384afdbcd859}} 
+\index{motors.\+h@{motors.\+h}!motor\+\_\+right@{motor\+\_\+right}}
+\index{motor\+\_\+right@{motor\+\_\+right}!motors.\+h@{motors.\+h}}
+\subsubsection{\texorpdfstring{motor\+\_\+right}{motor\_right}}
+{\footnotesize\ttfamily \hyperlink{structmotor__t}{motor\+\_\+t} motor\+\_\+right}
+

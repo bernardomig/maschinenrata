@@ -1,0 +1,13 @@
+#ifndef _CONFIG_H_
+#define _CONFIG_H_
+
+#define F_CPU 16000000L
+
+#define UART_BAUDRATE 9600
+
+#define UART_BUFFER_SIZE 64
+
+#define MOTORS_LINEAR_SPEED 120
+#define MOTORS_ROTATE_SPEED 100
+
+#endif
