@@ -52,28 +52,57 @@ loop()
     curr |= (LEFT | RIGHT);
   }
 
-  sprintf(to_send,
-          "%i|%i|%i|%i|%i\n",
-          (curr >> 0) & 1,
-          (curr >> 1) & 1,
-          (curr >> 2) & 1,
-          (curr >> 3) & 1,
-          (curr >> 4) & 1);
-  uart_puts(to_send);
-
   // detect a right turn
   if (((prev & RIGHT) && !(curr & RIGHT)) &&
       (!(prev & LEFT) && !(curr & LEFT)) && !(curr & CENTERED)) {
-    uart_puts("RIGHT\n");
+    uart_puts("R\n");
     motors_rotate_pos();
-    while (!(linesensors_get() & ON_TRACK))
+    while (!(linesensors_get() & LEFT_TILTED))
       ;
   }
   // detect a left turn
   else if (((prev & LEFT) && !(curr & LEFT)) &&
            (!(prev & RIGHT) && !(curr & RIGHT)) && !(curr & CENTERED)) {
-    uart_puts("LEFT\n");
+    uart_puts("L\n");
     motors_rotate_neg();
+    while (!(linesensors_get() & RIGHT_TILTED))
+      ;
+  }
+  // detect a right and forward turn
+  else if (((prev & LEFT) && !(curr & LEFT)) &&
+           (!(prev & RIGHT) && !(curr & RIGHT)) && (curr & CENTERED)) {
+    uart_puts("RF\n");
+    motors_rotate_neg();
+    while ((linesensors_get() & ON_TRACK))
+      ;
+    while (!(linesensors_get() & ON_TRACK))
+      ;
+  }
+  // detect a left and forward turn
+  else if (((prev & RIGHT) && !(curr & RIGHT)) &&
+           (!(prev & LEFT) && !(curr & LEFT)) && (curr & CENTERED)) {
+    uart_puts("LF\n");
+    motors_rotate_pos();
+    while ((linesensors_get() & ON_TRACK))
+      ;
+    while (!(linesensors_get() & ON_TRACK))
+      ;
+  }
+  // detect a T turn
+  else if (((prev & RIGHT) && !(curr & RIGHT)) &&
+           ((prev & LEFT) && !(curr & LEFT)) && !(curr & CENTERED)) {
+    uart_puts("LR\n");
+    motors_rotate_pos();
+    while (!(linesensors_get() & ON_TRACK))
+      ;
+  }
+  // detect a cross turn
+  else if (((prev & RIGHT) && !(curr & RIGHT)) &&
+           ((prev & LEFT) && !(curr & LEFT)) && (curr & CENTERED)) {
+    uart_puts("LFR\n");
+    motors_rotate_pos();
+    while ((linesensors_get() & ON_TRACK))
+      ;
     while (!(linesensors_get() & ON_TRACK))
       ;
   }
