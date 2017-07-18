@@ -5,6 +5,9 @@
 
 #include <avr/io.h>
 
+/**
+ * @brief A circular buffer to hold the data of the communication.
+ */
 typedef struct _uart_buffer_t_
 {
   uint8_t buffer[UART_BUFFER_SIZE];

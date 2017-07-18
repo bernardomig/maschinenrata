@@ -9,6 +9,16 @@
 #include <stdint.h>
 
 /**
+ * @brief
+ */
+typedef enum _direction_t_ {
+  LEFT_DIR,
+  FRONT_DIR,
+  RIGHT_DIR,
+  BACK_DIR
+} direction_t;
+
+/**
  * @brief The size of the path, in number of intersections.
  */
 #define PATH_SIZE 20
@@ -49,12 +59,5 @@ path_init(path_t* path);
  */
 void
 path_append(path_t* path, turn_t turn);
-
-/**
- * @brief Optimizes the path to the one with less turns.
- * @param path The path to be optimized.
- */
-void
-path_optimise(path_t* path);
 
 #endif
