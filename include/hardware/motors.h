@@ -43,6 +43,12 @@ void
 motors_lean_neg();
 
 void
+motors_tilt_pos();
+
+void
+motors_tilt_neg();
+
+void
 motors_rotate_pos();
 
 void

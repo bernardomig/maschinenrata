@@ -52,8 +52,8 @@ clean:
 	$(RM) $(BINDIR) -R
 
 format:
-	clang-format -style=Mozilla -i $(SRCDIR)/*.c
-	clang-format -style=Mozilla -i $(INCLUDEDIR)/**/*.h
+	clang-format -style=file -i $(SRCDIR)/*.c
+	clang-format -style=file -i $(INCLUDEDIR)/**/*.h
 
-doc: 
+doc:
 	doxygen

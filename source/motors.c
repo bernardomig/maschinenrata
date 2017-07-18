@@ -54,9 +54,9 @@ motors_reverse()
 void
 motors_lean_pos()
 {
-  motor_right.speed = MOTORS_LINEAR_SPEED;
+  motor_right.speed = MOTORS_ROTATE_SPEED;
   motor_right.direction = 0;
-  motor_left.speed = (MOTORS_LINEAR_SPEED * 0.7);
+  motor_left.speed = MOTORS_ROTATE_SPEED * 0.3;
   motor_right.direction = 0;
   motors_update();
 }
@@ -64,9 +64,29 @@ motors_lean_pos()
 void
 motors_lean_neg()
 {
-  motor_right.speed = (MOTORS_LINEAR_SPEED * 0.7);
+  motor_right.speed = MOTORS_ROTATE_SPEED * 0.3;
   motor_right.direction = 0;
-  motor_left.speed = MOTORS_LINEAR_SPEED;
+  motor_left.speed = MOTORS_ROTATE_SPEED;
+  motor_right.direction = 0;
+  motors_update();
+}
+
+void
+motors_tilt_pos()
+{
+  motor_right.speed = MOTORS_ROTATE_SPEED;
+  motor_right.direction = 0;
+  motor_left.speed = MOTORS_ROTATE_SPEED * 0.9;
+  motor_right.direction = 0;
+  motors_update();
+}
+
+void
+motors_tilt_neg()
+{
+  motor_right.speed = MOTORS_ROTATE_SPEED * 0.9;
+  motor_right.direction = 0;
+  motor_left.speed = MOTORS_ROTATE_SPEED;
   motor_right.direction = 0;
   motors_update();
 }

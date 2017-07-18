@@ -10,7 +10,7 @@
  *   // do something, like rotating right.
  * }
  * @endcode
-*/
+ */
 
 #ifndef _LINESENSORS_H_
 #define _LINESENSORS_H_
@@ -102,7 +102,7 @@ linesensors_update();
  * variable.
  */
 void
-linesensors_set_threshold(linesensors_t threshold);
+linesensors_set_threshold(linesensors_t _threshold);
 
 /**
  * @brief Get the boolean values of the sensors.
