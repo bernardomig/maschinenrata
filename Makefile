@@ -10,6 +10,7 @@ SRCDIR := source
 INCLUDEDIR := include
 BINDIR := bin
 DOCDIR := doc
+TESTSDIR := tests
 
 MMCU := atmega328p
 
