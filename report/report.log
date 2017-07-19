@@ -1,0 +1,501 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.4)  19 JUL 2017 14:12
+entering extended mode
+**./report.tex
+(report.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2017/05/19 3.10 The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
+Language: english 2017/01/24 v3.3q English support from the babel system
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2017/05/19 3.10 Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2015/03/17 v1.2c Input encoding file
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count89
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen106
+\captionmargin@=\dimen107
+\captionwidth=\dimen108
+\caption@tempdima=\dimen109
+\caption@indent=\dimen110
+\caption@parindent=\dimen111
+\caption@hangindent=\dimen112
+)
+\c@ContinuedFloat=\count90
+)
+\c@subfigure=\count91
+\c@subtable=\count92
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\threeparttable\threeparttable.sty"
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box26
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\placeins\placeins.sty"
+Package: placeins 2005/04/18  v 2.2
+) (report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count93
+\scratchdimen=\dimen113
+\scratchbox=\box27
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen114
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks18
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: threeparttable package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+<itpllogo.png, id=1, 167.87718pt x 112.92188pt>
+File: itpllogo.png Graphic file (type png)
+ <use itpllogo.png>
+Package pdftex.def Info: itpllogo.png used on input line 38.
+(pdftex.def)             Requested size: 51.7479pt x 34.80725pt.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 49.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./itpllogo.png (PNG copy)
+>] (report.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 7.
+)
+\tf@toc=\write3
+\openout3 = `report.toc'.
+
+
+[1
+
+] (report.lof)
+\tf@lof=\write4
+\openout4 = `report.lof'.
+
+ [2
+
+] (report.lot)
+\tf@lot=\write5
+\openout5 = `report.lot'.
+
+ [3
+
+] [4
+
+]
+Chapter 1.
+[5
+
+] [6]
+Chapter 2.
+<hardware1.png, id=36, 1245.15187pt x 912.40875pt>
+File: hardware1.png Graphic file (type png)
+ <use hardware1.png>
+Package pdftex.def Info: hardware1.png used on input line 130.
+(pdftex.def)             Requested size: 345.0pt x 252.79964pt.
+ [7
+
+ <./hardware1.png>] <frame1.jpg, id=42, 1821.80624pt x 1025.33063pt>
+File: frame1.jpg Graphic file (type jpg)
+
+<use frame1.jpg>
+Package pdftex.def Info: frame1.jpg used on input line 146.
+(pdftex.def)             Requested size: 155.24895pt x 87.36316pt.
+ <motor1.jpg, id=43, 4111.36pt x 2312.64pt>
+File: motor1.jpg Graphic file (type jpg)
+ <use motor1.jpg>
+Package pdftex.def Info: motor1.jpg used on input line 152.
+(pdftex.def)             Requested size: 155.24895pt x 87.3025pt.
+
+<IR2.png, id=44, 357.58594pt x 447.92343pt>
+File: IR2.png Graphic file (type png)
+ <use IR2.png>
+Package pdftex.def Info: IR2.png used on input line 172.
+(pdftex.def)             Requested size: 103.50105pt x 129.6484pt.
+
+<IR1.png, id=45, 358.33875pt x 448.67625pt>
+File: IR1.png Graphic file (type png)
+ <use IR1.png>
+Package pdftex.def Info: IR1.png used on input line 178.
+(pdftex.def)             Requested size: 103.50105pt x 129.59247pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<LS1.jpg, id=46, 4111.36pt x 2312.64pt>
+File: LS1.jpg Graphic file (type jpg)
+ <use LS1.jpg>
+Package pdftex.def Info: LS1.jpg used on input line 186.
+(pdftex.def)             Requested size: 227.62204pt x 128.02486pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <./frame1.jpg> <./motor1.jpg>] <USS.png, id=51, 794.97pt x 387.69844pt>
+File: USS.png Graphic file (type png)
+
+<use USS.png>
+Package pdftex.def Info: USS.png used on input line 202.
+(pdftex.def)             Requested size: 207.0021pt x 100.95302pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9 <./IR2.png> <./IR1.png> <./LS1.jpg>]
+<USSRL.jpg, id=60, 4111.36pt x 2312.64pt>
+File: USSRL.jpg Graphic file (type jpg)
+ <use USSRL.jpg>
+Package pdftex.def Info: USSRL.jpg used on input line 209.
+(pdftex.def)             Requested size: 207.0021pt x 116.4151pt.
+
+<Arduino1.jpg, id=61, 4111.36pt x 2312.64pt>
+File: Arduino1.jpg Graphic file (type jpg)
+ <use Arduino1.jpg>
+Package pdftex.def Info: Arduino1.jpg used on input line 220.
+(pdftex.def)             Requested size: 227.62204pt x 128.02486pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (69.15475pt too wide) in paragraph at lines 227--246
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<PinMapping.png, id=62, 458.46281pt x 306.39468pt>
+File: PinMapping.png Graphic file (type png)
+ <use PinMapping.png>
+Package pdftex.def Info: PinMapping.png used on input line 250.
+(pdftex.def)             Requested size: 345.0pt x 230.5762pt.
+
+[10 <./USS.png> <./USSRL.jpg>] [11 <./Arduino1.jpg>] [12 <./PinMapping.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+
+ []
+
+<soldering13.jpg, id=74, 4111.36pt x 2312.64pt>
+File: soldering13.jpg Graphic file (type jpg)
+ <use soldering13.jpg>
+Package pdftex.def Info: soldering13.jpg used on input line 278.
+(pdftex.def)             Requested size: 227.62204pt x 128.02486pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<DHB1.png, id=75, 144.54pt x 68.4156pt>
+File: DHB1.png Graphic file (type png)
+ <use DHB1.png>
+Package pdftex.def Info: DHB1.png used on input line 286.
+(pdftex.def)             Requested size: 241.49895pt x 114.31522pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13
+
+] [14 <./soldering13.jpg> <./DHB1.png>]
+Chapter 3.
+
+Overfull \hbox (2.66632pt too wide) in paragraph at lines 308--309
+[]\T1/cmr/m/n/10 supports a va-ri-ety of in-system
+ []
+
+[15
+
+] [16]
+Chapter 4.
+<orientation1.png, id=89, 537.50812pt x 666.99188pt>
+File: orientation1.png Graphic file (type png)
+ <use orientation1.png>
+Package pdftex.def Info: orientation1.png used on input line 334.
+(pdftex.def)             Requested size: 103.17741pt x 128.0374pt.
+
+<orientation2.png, id=90, 563.85657pt x 666.99188pt>
+File: orientation2.png Graphic file (type png)
+ <use orientation2.png>
+Package pdftex.def Info: orientation2.png used on input line 340.
+(pdftex.def)             Requested size: 108.23514pt x 128.0374pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
+
+ []
+
+[17
+
+ <./orientation1.png> <./orientation2.png>]
+<situations.png, id=96, 1187.18532pt x 822.82407pt>
+File: situations.png Graphic file (type png)
+ <use situations.png>
+Package pdftex.def Info: situations.png used on input line 350.
+(pdftex.def)             Requested size: 345.0pt x 239.11508pt.
+
+[18 <./situations.png>] <choice2.png, id=102, 877.77937pt x 666.23906pt>
+File: choice2.png Graphic file (type png)
+
+<use choice2.png>
+Package pdftex.def Info: choice2.png used on input line 365.
+(pdftex.def)             Requested size: 155.24895pt x 117.83383pt.
+ <choice3.png, id=103, 877.77937pt x 666.23906pt>
+File: choice3.png Graphic file (type png)
+
+<use choice3.png>
+Package pdftex.def Info: choice3.png used on input line 371.
+(pdftex.def)             Requested size: 155.24895pt x 117.83383pt.
+ <maze1.png, id=104, 636.12656pt x 557.83406pt>
+File: maze1.png Graphic file (type png)
+
+<use maze1.png>
+Package pdftex.def Info: maze1.png used on input line 388.
+(pdftex.def)             Requested size: 345.0pt x 302.53673pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19 <./choice2.png> <./choice3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 395--398
+
+ []
+
+[20 <./maze1.png>] <chart1.jpg, id=114, 601.4972pt x 482.55281pt>
+File: chart1.jpg Graphic file (type jpg)
+
+<use chart1.jpg>
+Package pdftex.def Info: chart1.jpg used on input line 422.
+(pdftex.def)             Requested size: 345.0pt x 276.78828pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+ []
+
+[21 <./chart1.jpg>] <calib3.png, id=118, 1390.44469pt x 621.82312pt>
+File: calib3.png Graphic file (type png)
+
+<use calib3.png>
+Package pdftex.def Info: calib3.png used on input line 443.
+(pdftex.def)             Requested size: 345.0pt x 154.28833pt.
+ [22 <./calib3.png>]
+Chapter 5.
+[23
+
+]
+Chapter 6.
+File: choice2.png Graphic file (type png)
+<use choice2.png>
+Package pdftex.def Info: choice2.png used on input line 463.
+(pdftex.def)             Requested size: 155.24895pt x 117.83383pt.
+File: choice3.png Graphic file (type png)
+ <use choice3.png>
+Package pdftex.def Info: choice3.png used on input line 469.
+(pdftex.def)             Requested size: 155.24895pt x 117.83383pt.
+ [24
+
+]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 508.
+
+[25
+
+] (report.aux) ) 
+Here is how much of TeX's memory you used:
+ 3533 strings out of 493323
+ 52913 string characters out of 3139067
+ 119223 words of memory out of 3000000
+ 7003 multiletter control sequences out of 15000+200000
+ 15926 words of font info for 31 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,7n,40p,1066b,443s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\João\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ecbx0700.pk> <C:\Users\João\AppData\Local\MiKTeX\2.9\fonts\pk\lj
+four\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\João\AppData\Local\MiKTeX\2.9\f
+onts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\João\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\João\AppDat
+a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Jo
+ão\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C
+:\Users\João\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1
+000.pk> <C:\Users\João\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
+i600\ecbx2488.pk> <C:\Users\João\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
+ppen\ec\dpi600\ecrm1200.pk> <C:\Users\João\AppData\Local\MiKTeX\2.9\fonts\pk\l
+jfour\jknappen\ec\dpi600\ectt1440.pk> <C:\Users\João\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\João\AppData\Local\M
+iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <C:\Users\João\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk> <C:\Users\J
+oão\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on report.pdf (26 pages, 9372244 bytes).
+PDF statistics:
+ 608 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+

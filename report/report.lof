@@ -1,0 +1,22 @@
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Hardware components scheme\relax }}{7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces how the light sensors work\relax }}{9}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Light reflective sensor\relax }}{9}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces How the ultrasonic sensor works\relax }}{10}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Ultrasonic Sensor\relax }}{10}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Arduino UNO\relax }}{11}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Arduino Pin Mapping\relax }}{12}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Soldering the Double H Bridge\relax }}{14}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Double H Bridge wiring Diagram\relax }}{14}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Misallignment detection\relax }}{17}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The 8 situations\relax }}{18}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Wrong situation reading due to misalignment\relax }}{19}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Left-Priority maze run \relax }}{20}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Flowchart of Path Optimizer\relax }}{21}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The Problem with different light intensities\relax }}{22}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
