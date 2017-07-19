@@ -7,6 +7,7 @@
 \usepackage{subcaption}
 \usepackage{threeparttable}
 \usepackage{placeins}
+\usepackage{amsmath}
 %
 
 \author{
@@ -44,20 +45,18 @@
 	\vspace{1cm}
 	\Large{Project by:}\\
 	\vspace{0.3cm}
-  Simões, João\\
-  197311\\
+
+	\centering
+  Simões, João\hspace{1cm}197311\\
   \texttt{joao.simoes@tu-dortmund.de}\\
 \vspace{0.2cm}
-  Lourenço, Bernardo\\
-  197214\\
+  Lourenço, Bernardo\hspace{1cm}197214\\
   \texttt{bernardo.lourenco@tu-dortmund.de}\\
 \vspace{0.2cm} 
-  Kamenca, Tomas\\
-  199715\\
+  Kamenca, Tomas\hspace{1cm}199715\\
   \texttt{tomas.kamenca@tu-dortmund.de}\\
 \vspace{0.2cm}
-  Alias, Nil\\
-  197167\\
+  Alias, Nil\hspace{1cm}197167\\
   \texttt{nil.alias@tu-dortmund.de}
 
 	\vfill
@@ -352,8 +351,64 @@ In the maze we create there will be 8 kinds of situations that the robot can fin
 \end{figure}
 
 
-In order to make a decision as to whether the robot should turn left, right, U-turn or just go forward, the robot should first be able to tell in which situation he is in. For that purpose we use the 2 light sensor in the extremes and the  the one in the middle. 
-.........
+In order to make a decision as to whether the robot should turn left, right, U-turn or just go forward, the robot should first be able to tell in which situation he is in. For that purpose we use the 2 light sensor in the extremes and the  the one in the middle. \\\\\\\\\\\\
+
+
+\begin{figure}[h!]
+\centering
+\begin{subfigure}[h]{0.4\textwidth}
+\centering
+\textbf{\huge{Left Turn}}
+\begin{Large}
+\[
+\begin{pmatrix}
+1\\
+1\\
+0
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+0\\
+0\\
+0
+\end{pmatrix}
+\]
+\end{Large}
+\includegraphics[width=3.5cm]{L}
+\end{subfigure}
+\hfill 
+\begin{subfigure}[h]{0.4\textwidth}
+\centering
+\textbf{\huge{Right Turn}}
+\begin{Large}
+\[
+\begin{pmatrix}
+0\\
+1\\
+1
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+0\\
+0\\
+0
+\end{pmatrix}
+\]
+\end{Large}
+\includegraphics[width=3.5cm]{R}
+\end{subfigure}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+.........\\
 If for example, all the light sensors detect background while the robot is moving forward, that means that the robot found a dead end. In the case that both the Left sensor and the Middle sensor detect path that means that the robot either found a left turn or a straight-left Intersection, in order to determine which one is the case, the robot moves about an inch forward and if the middle sensor still detects path its an straight-left intersection, if it detects background its a left turn. The same logic applies to the right side. As for the case where all the 3 light sensors detect path, he is in the presence  of either a "T" intersection, a Cross Intersection or the goal, in order to determine which one is the case, the robot moves about an inch forward and if no sensor detects path, its a "T", if all sensors detect path, its the Goal, if only the middle sensor detect path, its a cross...........
 
 Because the robot doesn't move perfectly straight in a line. A slight misalignment when entering  a "T" or Cross intersection might make the robot detect one branch before the other. This will make the robot think that there is only one side branch making the reading of the situation wrong.\\
@@ -472,39 +527,17 @@ At first we initialize the global variable and then the display. In the loop fun
 \end{figure}
 
 
-%\chapter{Documentation of Aproach to the Task's Solution}
-%\section{Solution Methods}
-%\section{Sources}
-
-
-
-%\chapter{Elemnsts of Program Structure}
-
-
-%\chapter{Interface and Operating Instructions}
-%\section{Type of User interface}
-%\section{Instructions for use}
-
-
-%\chapter{Algorithms}
-
-
-%\chapter{Build and Partially Test Program}
-
-
-%\chapter{Testing: Create Test Data, write test Cases, perform Tests, Documentation}
-
-
-%\chapter{Application of Program}
-
-
-%\chapter{Attachments}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Referências bibliográficas - Registo directo
 \addcontentsline{toc}{chapter}{Bibliography} % prep. índice
 \begin{thebibliography}{99}
+
+\bibitem{latexcompanion} 
+
+
+
+
+
 \end{thebibliography}
 
 

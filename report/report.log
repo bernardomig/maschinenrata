@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.4)  19 JUL 2017 14:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.4)  19 JUL 2017 16:21
 entering extended mode
 **./report.tex
 (report.tex
@@ -119,35 +119,93 @@ Package: threeparttable 2003/06/13  v 3.0
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\placeins\placeins.sty"
 Package: placeins 2005/04/18  v 2.2
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen113
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen114
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count93
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count94
+\leftroot@=\count95
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count96
+\DOTSCASE@=\count97
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen115
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
+\dotsspace@=\muskip10
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
+\tag@help=\toks18
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
+\andhelp@=\toks19
+\eqnshift@=\dimen116
+\alignsep@=\dimen117
+\tagshift@=\dimen118
+\tagwidth@=\dimen119
+\totwidth@=\dimen120
+\lineht@=\dimen121
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 ) (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count93
-\scratchdimen=\dimen113
-\scratchbox=\box27
-\nofMPsegments=\count94
-\nofMParguments=\count95
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count96
-\MPscratchDim=\dimen114
-\MPnumerator=\count97
-\makeMPintoPDFobject=\count98
-\everyMPtoPDFconversion=\toks18
+\scratchcounter=\count105
+\scratchdimen=\dimen122
+\scratchbox=\box29
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen123
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
+\everyMPtoPDFconversion=\toks23
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -200,21 +258,16 @@ Package caption Info: End \AtBeginDocument code.
 <itpllogo.png, id=1, 167.87718pt x 112.92188pt>
 File: itpllogo.png Graphic file (type png)
  <use itpllogo.png>
-Package pdftex.def Info: itpllogo.png used on input line 38.
+Package pdftex.def Info: itpllogo.png used on input line 39.
 (pdftex.def)             Requested size: 51.7479pt x 34.80725pt.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 49.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 51.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./itpllogo.png (PNG copy)
->] (report.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 7.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 7.
-)
+>] (report.toc)
 \tf@toc=\write3
 \openout3 = `report.toc'.
 
@@ -244,7 +297,7 @@ Chapter 2.
 <hardware1.png, id=36, 1245.15187pt x 912.40875pt>
 File: hardware1.png Graphic file (type png)
  <use hardware1.png>
-Package pdftex.def Info: hardware1.png used on input line 130.
+Package pdftex.def Info: hardware1.png used on input line 129.
 (pdftex.def)             Requested size: 345.0pt x 252.79964pt.
  [7
 
@@ -252,24 +305,24 @@ Package pdftex.def Info: hardware1.png used on input line 130.
 File: frame1.jpg Graphic file (type jpg)
 
 <use frame1.jpg>
-Package pdftex.def Info: frame1.jpg used on input line 146.
+Package pdftex.def Info: frame1.jpg used on input line 145.
 (pdftex.def)             Requested size: 155.24895pt x 87.36316pt.
  <motor1.jpg, id=43, 4111.36pt x 2312.64pt>
 File: motor1.jpg Graphic file (type jpg)
  <use motor1.jpg>
-Package pdftex.def Info: motor1.jpg used on input line 152.
+Package pdftex.def Info: motor1.jpg used on input line 151.
 (pdftex.def)             Requested size: 155.24895pt x 87.3025pt.
 
 <IR2.png, id=44, 357.58594pt x 447.92343pt>
 File: IR2.png Graphic file (type png)
  <use IR2.png>
-Package pdftex.def Info: IR2.png used on input line 172.
+Package pdftex.def Info: IR2.png used on input line 171.
 (pdftex.def)             Requested size: 103.50105pt x 129.6484pt.
 
 <IR1.png, id=45, 358.33875pt x 448.67625pt>
 File: IR1.png Graphic file (type png)
  <use IR1.png>
-Package pdftex.def Info: IR1.png used on input line 178.
+Package pdftex.def Info: IR1.png used on input line 177.
 (pdftex.def)             Requested size: 103.50105pt x 129.59247pt.
 
 
@@ -278,7 +331,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <LS1.jpg, id=46, 4111.36pt x 2312.64pt>
 File: LS1.jpg Graphic file (type jpg)
  <use LS1.jpg>
-Package pdftex.def Info: LS1.jpg used on input line 186.
+Package pdftex.def Info: LS1.jpg used on input line 185.
 (pdftex.def)             Requested size: 227.62204pt x 128.02486pt.
 
 
@@ -288,7 +341,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: USS.png Graphic file (type png)
 
 <use USS.png>
-Package pdftex.def Info: USS.png used on input line 202.
+Package pdftex.def Info: USS.png used on input line 201.
 (pdftex.def)             Requested size: 207.0021pt x 100.95302pt.
 
 
@@ -298,20 +351,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <USSRL.jpg, id=60, 4111.36pt x 2312.64pt>
 File: USSRL.jpg Graphic file (type jpg)
  <use USSRL.jpg>
-Package pdftex.def Info: USSRL.jpg used on input line 209.
+Package pdftex.def Info: USSRL.jpg used on input line 208.
 (pdftex.def)             Requested size: 207.0021pt x 116.4151pt.
 
 <Arduino1.jpg, id=61, 4111.36pt x 2312.64pt>
 File: Arduino1.jpg Graphic file (type jpg)
  <use Arduino1.jpg>
-Package pdftex.def Info: Arduino1.jpg used on input line 220.
+Package pdftex.def Info: Arduino1.jpg used on input line 219.
 (pdftex.def)             Requested size: 227.62204pt x 128.02486pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (69.15475pt too wide) in paragraph at lines 227--246
+Overfull \hbox (69.15475pt too wide) in paragraph at lines 226--245
  [] 
  []
 
@@ -321,28 +374,28 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <PinMapping.png, id=62, 458.46281pt x 306.39468pt>
 File: PinMapping.png Graphic file (type png)
  <use PinMapping.png>
-Package pdftex.def Info: PinMapping.png used on input line 250.
+Package pdftex.def Info: PinMapping.png used on input line 249.
 (pdftex.def)             Requested size: 345.0pt x 230.5762pt.
 
 [10 <./USS.png> <./USSRL.jpg>] [11 <./Arduino1.jpg>] [12 <./PinMapping.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
 <soldering13.jpg, id=74, 4111.36pt x 2312.64pt>
 File: soldering13.jpg Graphic file (type jpg)
  <use soldering13.jpg>
-Package pdftex.def Info: soldering13.jpg used on input line 278.
+Package pdftex.def Info: soldering13.jpg used on input line 277.
 (pdftex.def)             Requested size: 227.62204pt x 128.02486pt.
 
 
@@ -351,7 +404,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <DHB1.png, id=75, 144.54pt x 68.4156pt>
 File: DHB1.png Graphic file (type png)
  <use DHB1.png>
-Package pdftex.def Info: DHB1.png used on input line 286.
+Package pdftex.def Info: DHB1.png used on input line 285.
 (pdftex.def)             Requested size: 241.49895pt x 114.31522pt.
 
 
@@ -362,7 +415,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ] [14 <./soldering13.jpg> <./DHB1.png>]
 Chapter 3.
 
-Overfull \hbox (2.66632pt too wide) in paragraph at lines 308--309
+Overfull \hbox (2.66632pt too wide) in paragraph at lines 307--308
 []\T1/cmr/m/n/10 supports a va-ri-ety of in-system
  []
 
@@ -373,16 +426,16 @@ Chapter 4.
 <orientation1.png, id=89, 537.50812pt x 666.99188pt>
 File: orientation1.png Graphic file (type png)
  <use orientation1.png>
-Package pdftex.def Info: orientation1.png used on input line 334.
+Package pdftex.def Info: orientation1.png used on input line 333.
 (pdftex.def)             Requested size: 103.17741pt x 128.0374pt.
 
 <orientation2.png, id=90, 563.85657pt x 666.99188pt>
 File: orientation2.png Graphic file (type png)
  <use orientation2.png>
-Package pdftex.def Info: orientation2.png used on input line 340.
+Package pdftex.def Info: orientation2.png used on input line 339.
 (pdftex.def)             Requested size: 108.23514pt x 128.0374pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 
  []
 
@@ -392,89 +445,132 @@ Underfull \hbox (badness 10000) in paragraph at lines 347--348
 <situations.png, id=96, 1187.18532pt x 822.82407pt>
 File: situations.png Graphic file (type png)
  <use situations.png>
-Package pdftex.def Info: situations.png used on input line 350.
+Package pdftex.def Info: situations.png used on input line 349.
 (pdftex.def)             Requested size: 345.0pt x 239.11508pt.
 
-[18 <./situations.png>] <choice2.png, id=102, 877.77937pt x 666.23906pt>
-File: choice2.png Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
-<use choice2.png>
-Package pdftex.def Info: choice2.png used on input line 365.
-(pdftex.def)             Requested size: 155.24895pt x 117.83383pt.
- <choice3.png, id=103, 877.77937pt x 666.23906pt>
-File: choice3.png Graphic file (type png)
+ []
 
-<use choice3.png>
-Package pdftex.def Info: choice3.png used on input line 371.
-(pdftex.def)             Requested size: 155.24895pt x 117.83383pt.
- <maze1.png, id=104, 636.12656pt x 557.83406pt>
-File: maze1.png Graphic file (type png)
 
-<use maze1.png>
-Package pdftex.def Info: maze1.png used on input line 388.
-(pdftex.def)             Requested size: 345.0pt x 302.53673pt.
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+
+ []
+
+<L.png, id=97, 216.05719pt x 218.31563pt>
+File: L.png Graphic file (type png)
+ <use L.png>
+Package pdftex.def Info: L.png used on input line 377.
+(pdftex.def)             Requested size: 99.58464pt x 100.62627pt.
+
+<R.png, id=98, 216.05719pt x 218.31563pt>
+File: R.png Graphic file (type png)
+ <use R.png>
+Package pdftex.def Info: R.png used on input line 398.
+(pdftex.def)             Requested size: 99.58464pt x 100.62627pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19 <./choice2.png> <./choice3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 395--398
+[18 <./situations.png>] <choice2.png, id=104, 877.77937pt x 666.23906pt>
+File: choice2.png Graphic file (type png)
+
+<use choice2.png>
+Package pdftex.def Info: choice2.png used on input line 420.
+(pdftex.def)             Requested size: 155.24895pt x 117.83383pt.
+ <choice3.png, id=105, 877.77937pt x 666.23906pt>
+File: choice3.png Graphic file (type png)
+
+<use choice3.png>
+Package pdftex.def Info: choice3.png used on input line 426.
+(pdftex.def)             Requested size: 155.24895pt x 117.83383pt.
+ [19 <./L.png> <./R.png> <./choice2.png> <./choice3.png>]
+<maze1.png, id=115, 636.12656pt x 557.83406pt>
+File: maze1.png Graphic file (type png)
+ <use maze1.png>
+Package pdftex.def Info: maze1.png used on input line 443.
+(pdftex.def)             Requested size: 345.0pt x 302.53673pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--453
 
  []
 
-[20 <./maze1.png>] <chart1.jpg, id=114, 601.4972pt x 482.55281pt>
+[20 <./maze1.png>] <chart1.jpg, id=120, 601.4972pt x 482.55281pt>
 File: chart1.jpg Graphic file (type jpg)
 
 <use chart1.jpg>
-Package pdftex.def Info: chart1.jpg used on input line 422.
+Package pdftex.def Info: chart1.jpg used on input line 477.
 (pdftex.def)             Requested size: 345.0pt x 276.78828pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
 
  []
 
-[21 <./chart1.jpg>] <calib3.png, id=118, 1390.44469pt x 621.82312pt>
+[21] <calib3.png, id=124, 1390.44469pt x 621.82312pt>
 File: calib3.png Graphic file (type png)
-
-<use calib3.png>
-Package pdftex.def Info: calib3.png used on input line 443.
+ <use calib3.png>
+Package pdftex.def Info: calib3.png used on input line 498.
 (pdftex.def)             Requested size: 345.0pt x 154.28833pt.
- [22 <./calib3.png>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22 <./chart1.jpg>] [23 <./calib3.png>]
 Chapter 5.
-[23
+[24
 
 ]
 Chapter 6.
 File: choice2.png Graphic file (type png)
 <use choice2.png>
-Package pdftex.def Info: choice2.png used on input line 463.
+Package pdftex.def Info: choice2.png used on input line 518.
 (pdftex.def)             Requested size: 155.24895pt x 117.83383pt.
 File: choice3.png Graphic file (type png)
  <use choice3.png>
-Package pdftex.def Info: choice3.png used on input line 469.
+Package pdftex.def Info: choice3.png used on input line 524.
 (pdftex.def)             Requested size: 155.24895pt x 117.83383pt.
- [24
+ [25
 
-]
-
-LaTeX Warning: Empty `thebibliography' environment on input line 508.
-
-[25
+] [26
 
 ] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 3533 strings out of 493323
- 52913 string characters out of 3139067
- 119223 words of memory out of 3000000
- 7003 multiletter control sequences out of 15000+200000
- 15926 words of font info for 31 fonts, out of 3000000 for 9000
+ 4163 strings out of 493323
+ 60038 string characters out of 3139067
+ 130694 words of memory out of 3000000
+ 7608 multiletter control sequences out of 15000+200000
+ 20425 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,40p,1066b,443s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,10n,40p,1066b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\João\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
 pen\ec\dpi600\ecbx0700.pk> <C:\Users\João\AppData\Local\MiKTeX\2.9\fonts\pk\lj
 four\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\João\AppData\Local\MiKTeX\2.9\f
@@ -491,11 +587,13 @@ fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\João\AppData\Local\M
 iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <C:\Users\João\AppDa
 ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk> <C:\Users\J
 oão\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (26 pages, 9372244 bytes).
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on report.pdf (27 pages, 9396292 bytes).
 PDF statistics:
- 608 PDF objects out of 1000 (max. 8388607)
+ 628 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

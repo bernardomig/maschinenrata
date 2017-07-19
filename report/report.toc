@@ -28,12 +28,12 @@
 \contentsline {chapter}{\numberline {4}Algorithms}{17}
 \contentsline {section}{\numberline {4.1}orientation}{17}
 \contentsline {section}{\numberline {4.2}Situations}{18}
-\contentsline {section}{\numberline {4.3}Choice Making}{19}
-\contentsline {section}{\numberline {4.4}Path Optimizer}{20}
-\contentsline {section}{\numberline {4.5}Calibration}{22}
-\contentsline {chapter}{\numberline {5}Interface}{23}
-\contentsline {chapter}{\numberline {6}Testing}{24}
-\contentsline {section}{\numberline {6.1}Simulation}{24}
-\contentsline {section}{\numberline {6.2}Field Test}{24}
-\contentsline {section}{\numberline {6.3}Debugging}{24}
-\contentsline {chapter}{Bibliography}{24}
+\contentsline {section}{\numberline {4.3}Choice Making}{20}
+\contentsline {section}{\numberline {4.4}Path Optimizer}{21}
+\contentsline {section}{\numberline {4.5}Calibration}{21}
+\contentsline {chapter}{\numberline {5}Interface}{24}
+\contentsline {chapter}{\numberline {6}Testing}{25}
+\contentsline {section}{\numberline {6.1}Simulation}{25}
+\contentsline {section}{\numberline {6.2}Field Test}{25}
+\contentsline {section}{\numberline {6.3}Debugging}{25}
+\contentsline {chapter}{Bibliography}{25}
