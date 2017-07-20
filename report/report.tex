@@ -8,6 +8,11 @@
 \usepackage{threeparttable}
 \usepackage{placeins}
 \usepackage{amsmath}
+\usepackage[makeroom]{cancel}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+\usepackage{multirow}
+
 %
 
 \author{
@@ -107,8 +112,8 @@ We were also given the option of making the robot able to overcome a list of mor
 Before clearly defining the objectives we have for this project we had to take into consideration our limitations. The budget, the lack of tools we have due to our Erasmus background, the lack of experience some members of our team have with this subject and the short time we have to complete this task due to our early departure were the main limitations that led us to keep our project simple, cost-effective and spend some extra time researching and designing the robot.
 
 \subsection{Objectives}
-For the main task we decided that the path would be a black line taped to a white floor, the robot must be able to distinguish between the black path and the white background. In the task formulation in addition the the main task we were given the freedom of implementing many optional features to the robot. Because we have to use 2 kind of sensors we decided that we would should make the robot able to overcome something more than the base task. In addition to the main task, we decided we wanted the robot to be able to navigate around an unlooped maze and be able to find its output/Goal in the form of a big black square taped to the floor. Then go all the way back to the starting point and take an optimized path back to the end of the maze. The robot should be able to this while avoiding a possible obstacle and will be able to recognize if this obstacle is blocking its way to the goal. 
-
+\label{subsec:obj}
+For the main task we decided that the path would be a black line taped to a white floor, the robot must be able to distinguish between the black path and the white background. In the task formulation in addition the the main task we were given the freedom of implementing many optional features to the robot. Because we have to use 2 kind of sensors we decided that we would should make the robot able to overcome something more than the base task. In addition to the main task, we decided we wanted the robot to be able to navigate around an unlooped maze and be able to find its output/Goal taped to the floor. Then go all the way back to the starting point and take an optimized path back to the end of the maze. The robot should be able to this while avoiding a possible obstacle and will be able to recognize if this obstacle is blocking its way to the goal. 
 \subsection{Teamwork}
 The most important decisions for this project(e.g. objectives) and the report were made together with all 4 members. However when it came to coding and wiring, we were able to divide it into 4 more of less equally important tasks. We decided to divide the chores in the following way:
 
@@ -320,26 +325,106 @@ languages. We invoke a language-specific driver program (gcc in our case for lan
 
 \end{description}
 
+
+\chapter{Data}
+\section{Main variables}
+
+The program has several internal variables in order to work properly internally in the code.  Besides, the mini-robot has some global variables that interact between the Arduino and the hardware components.
+We define 4 global variables defined in the next table. We have one variable for each wheel, that stores speed and direction value sent to the components. In addition to these variables we have one for the 5-line sensors and 1 for the ultrasonic sensor, both of them store the value of distance received from the sensors.
+
+\vspace{0.5cm}
+
+\begin{tabular}{ |l|l|p{6cm}|  }
+	\hline
+	\multicolumn{3}{|c|}{\textbf{Variables}} \\
+	\hline
+	\textbf{Name} & \textbf{Type} & \textbf{Description} \\
+	\hline
+	motor\_left &	\texttt{motor\_t} & Global variable that stores the current value of the left motor\\
+	\hline
+	motor\_right	& \texttt{motor\_t} &	Global variable that stores the current value of the right motor \\
+	\hline
+	linesensors &	\texttt{linesensors\_t} &	Global variable that stores the current value of the sensors. Only updates when a call to linesensorsupdate is done.\\
+	\hline
+	rangefinder  &	\texttt{uint8\_t} &	Global variable that stores the current value of the ultrasonic sensor. Updates itself with every signal that it receives.\\
+	\hline
+\end{tabular}
+\vspace{0.5cm}
+
+All the variables are composed of \texttt{uint8\_t} (unsigned integer of 8 bits size), except the ultrasonic sensor, which is \texttt{uint16\_t} (unsigned integer of 16 bits size). \\
+
+\begin{tabular}{ |l|l|p{6cm}|  }
+	\hline
+	\multicolumn{3}{|c|}{\textbf{motor\_t}} \\
+	\hline
+	\textbf{Component} & \textbf{Type} & \textbf{Description} \\
+	\hline
+	speed & \texttt{uint8\_t} & The speed of the motor (can be a number between 0-255)\\
+	\hline
+	direction & \texttt{uint8\_t} & The direction of rotation of the motor. A zero is cw, else if ccw\\
+	\hline
+\end{tabular}
+
+\vspace{0.5cm}
+
+\begin{tabular}{ |l|l|p{6cm}|  }
+	\hline
+	\multicolumn{3}{|c|}{\textbf{linesensors\_t}} \\
+	\hline
+	\textbf{Component} & \textbf{Type} & \textbf{Description} \\
+	\hline
+	left &	 \texttt{uint8\_t} &	The left sensor output \\
+	\hline
+	midl	&  \texttt{uint8\_t} &	The mid-left sensor output\\
+	\hline
+	mid	 & \texttt{uint8\_t} &	The mid-mid sensor output \\
+	\hline
+	midr	 & \texttt{uint8\_t} &	The mid-right sensor output \\
+	\hline
+	right &	\texttt{uint8\_t} &	The right sensor output \\
+	\hline
+\end{tabular}
+
+\section{Initialization}
+
+The global variables defined in the previous section are initialized at the beginning of the process using internal functions as \texttt{linesensors\_init()}. The things that need to be initialized are explained in the following list:
+\begin{itemize}
+	\item Motors: initialize the counter 8-bit to create the PWN signal for the motor (PD5 and PD6) and turn the pin direction of the PD4-PD7 to output.
+	\item Linesensors: initialize the ADC of the atmega328.
+	\item Rangefinder: initialize the 8-bit ADC set the interrupt for the interrupt-enable pin PD2.
+\end{itemize}	
+
+\section{Constraints}
+	 
+In this sections the constraints between the different global variables are going to be explain:
+
+
+\begin{tabular}{ |p{2cm}|p{2cm}|p{6cm}|  }
+		\hline
+		Variable & Size & Description \\
+		\hline
+		\multirow{2}{*}{motors} & 8-bits & speed 0-255 \\\cline{2-3}& 8-bits & direction==0 Forward, !=0 Reverse\\
+		\hline
+		 linesensors 	 & 5 x 8-bits & 0-255 where: Black=180, White=50 and Threshold=100 
+	    	 \\
+		\hline
+	    rangefinder	 & 8-bits &	0-MaxValue where: 0=0s and MaxValue=TimeOut \\
+		\hline	
+\end{tabular}
+
+
+
 \chapter{Algorithms} 
 
 \section{orientation}
-The 3 light sensor in the middle are used to make sure that the robot stays on track. If the middle one detects path and the other 2 detects background, it means that the robot is on track and does not need to adjust its direction. However if one of the side sensors detect path, the robot is starting to go further away from the path and if no action is taken he would eventually find himself lost in the background. In order to prevent this from happening, as soon as a side sensor detects path the opposite side motor will slightly increase its speed until only the middle sensor detects path
+The 3 light sensor in the middle are used to make sure that the robot stays on track. If the middle one detects path and the other 2 detects background, it means that the robot is on track and does not need to adjust its direction. However if one of the side sensors detect path, the robot is starting to go further away from the path and if no action is taken he would eventually find himself lost in the background. In order to prevent this from happening, as soon as a side sensor detects path the opposite side motor will slightly decrease its speed until only the middle sensor detects path. If the misalignment is stronger, the opposite motor will further decrease its speed.
 
 
 
 \begin{figure}[h!]
 \centering
-\begin{subfigure}[h]{0.4\textwidth}
-\includegraphics[height=4.5cm]{orientation1}
-\caption{Alligned Direction}
-\end{subfigure}
-\qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-%(or a blank line to force the subfigure onto a new line)
-\begin{subfigure}[h]{0.4\textwidth}
-\includegraphics[height=4.5cm]{orientation2}
-\caption{Misalligned Direction}
-\end{subfigure}
-\caption{Misallignment detection}
+\includegraphics[width=\textwidth]{orientation3}
+\caption{Orientation modes}
 \end{figure}
 
 \section{Situations}
@@ -351,15 +436,28 @@ In the maze we create there will be 8 kinds of situations that the robot can fin
 \end{figure}
 
 
-In order to make a decision as to whether the robot should turn left, right, U-turn or just go forward, the robot should first be able to tell in which situation he is in. For that purpose we use the 2 light sensor in the extremes and the  the one in the middle. \\\\\\\\\\\\
+In order to make a decision as to whether the robot should turn left, right, U-turn or just go forward, the robot should first be able to tell in which situation he is in. For that purpose we use the 2 light sensor in the extremes and the  the ones in the middle. To explain the algorithm the robot uses to detect the situations we created a state machine that each state would be defined by the sensors in the following way:
 
+\begin{center}
+
+\(
+\begin{pmatrix}
+Left\\
+Mid\\
+Right
+\end{pmatrix}
+\)
+\end{center}
+
+\paragraph{Note:}Mid is 1 if at least one of the 3 middle sensors is 1\\
+
+The state only changes when an sensor changes from 1 to 0, always. By analyzing the change of state the robot is able to predict what kind of situation he is in.
 
 \begin{figure}[h!]
 \centering
 \begin{subfigure}[h]{0.4\textwidth}
 \centering
-\textbf{\huge{Left Turn}}
-\begin{Large}
+\textbf{\large{Left Turn}}
 \[
 \begin{pmatrix}
 1\\
@@ -373,14 +471,12 @@ In order to make a decision as to whether the robot should turn left, right, U-t
 0
 \end{pmatrix}
 \]
-\end{Large}
-\includegraphics[width=3.5cm]{L}
+\includegraphics[scale=0.3]{L}
 \end{subfigure}
-\hfill 
+\hspace{2cm} 
 \begin{subfigure}[h]{0.4\textwidth}
 \centering
-\textbf{\huge{Right Turn}}
-\begin{Large}
+\textbf{\large{Right Turn}}
 \[
 \begin{pmatrix}
 0\\
@@ -394,41 +490,155 @@ In order to make a decision as to whether the robot should turn left, right, U-t
 0
 \end{pmatrix}
 \]
-\end{Large}
-\includegraphics[width=3.5cm]{R}
+\includegraphics[scale=0.3]{R}
+\end{subfigure}
+\end{figure}
+\vspace{3cm}
+\begin{figure}[h!]
+\centering
+\begin{subfigure}[h]{0.4\textwidth}
+\centering
+\textbf{\large{Straigth/Left Intersection}}
+\[
+\begin{pmatrix}
+1\\
+1\\
+0
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+0\\
+1\\
+0
+\end{pmatrix}
+\]
+\includegraphics[scale=0.3]{LF}
+\end{subfigure}
+\hspace{2cm} 
+\begin{subfigure}[h]{0.4\textwidth}
+\centering
+\textbf{\large{Straight/Right Intersection}}
+\[
+\begin{pmatrix}
+0\\
+1\\
+1
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+0\\
+1\\
+0
+\end{pmatrix}
+\]
+\includegraphics[scale=0.3]{FR}
 \end{subfigure}
 \end{figure}
 
 
 
 
-
-
-
-
-
-
-.........\\
-If for example, all the light sensors detect background while the robot is moving forward, that means that the robot found a dead end. In the case that both the Left sensor and the Middle sensor detect path that means that the robot either found a left turn or a straight-left Intersection, in order to determine which one is the case, the robot moves about an inch forward and if the middle sensor still detects path its an straight-left intersection, if it detects background its a left turn. The same logic applies to the right side. As for the case where all the 3 light sensors detect path, he is in the presence  of either a "T" intersection, a Cross Intersection or the goal, in order to determine which one is the case, the robot moves about an inch forward and if no sensor detects path, its a "T", if all sensors detect path, its the Goal, if only the middle sensor detect path, its a cross...........
-
-Because the robot doesn't move perfectly straight in a line. A slight misalignment when entering  a "T" or Cross intersection might make the robot detect one branch before the other. This will make the robot think that there is only one side branch making the reading of the situation wrong.\\
-To correct this, after the robot detects path with one of the side sensors it will move forward about 1 millimeter to make sure it is not missing path with the other sensor.
-
-\begin{figure}[h]
-    \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{choice2}
-        \caption*{Problem}
-    \end{subfigure}
-    \quad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-      %(or a blank line to force the subfigure onto a new line)
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{choice3}
-        \caption*{Solution}
-    \end{subfigure}
-    \caption{Wrong situation reading due to misalignment}
+\begin{figure}[h!]
+\centering
+\begin{subfigure}[h]{0.4\textwidth}
+\centering
+\textbf{\large{Cross Intersection}}
+\[
+\begin{pmatrix}
+1\\
+1\\
+1
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+0\\
+1\\
+0
+\end{pmatrix}
+\]
+\includegraphics[scale=0.3]{LFR}
+\end{subfigure}
+\hspace{2cm} 
+\begin{subfigure}[h]{0.4\textwidth}
+\centering
+\textbf{\large{T Intersection}}
+\[
+\begin{pmatrix}
+1\\
+1\\
+1
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+0\\
+0\\
+0
+\end{pmatrix}
+\]
+\includegraphics[scale=0.3]{LR}
+\end{subfigure}
 \end{figure}
 
+\begin{figure}[h!]
+\centering
+
+ 
+\begin{subfigure}[h]{0.4\textwidth}
+\centering
+\textbf{\large{Goal}}
+\[
+\begin{pmatrix}
+1\\
+1\\
+1
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1\\
+0\\
+1
+\end{pmatrix}
+\]
+\includegraphics[scale=0.3]{G}
+\end{subfigure}
+\hspace{2cm}
+\begin{subfigure}[h]{0.4\textwidth}
+\centering
+\textbf{\large{Dead End}}
+\[
+\begin{pmatrix}
+0\\
+1\\
+0
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+0\\
+0\\
+0
+\end{pmatrix}
+\]
+\includegraphics[scale=0.3]{DE}
+\end{subfigure}
+\end{figure}
+
+\FloatBarrier
+
+Because the robot doesn't move perfectly straight in a line. A slight misalignment when exiting  a "T" or Cross intersection might make the robot detect the end of one branch before the other. This will make the reading of the situation wrong. To correct this, after the robot detects that the two side sensors are detecting the path, they both need to detect the background to change both values, avoiding something like this:
+
+\[
+\begin{pmatrix}
+1\\
+1\\
+1
+\end{pmatrix}
+\xcancel{\rightarrow}
+\begin{pmatrix}
+1\\
+1\\
+0
+\end{pmatrix}
+\]
 
 
 \section{Choice Making}
@@ -446,13 +656,49 @@ After every choice, the robot will append in his memory the action he took(L: Tu
 \end{figure}
 \FloatBarrier
 
+
+
+\section{Rotation}
+Now that the robot know what to do, he needs to know how to do it. Since we have no encoder, making a turn is more challenging. Making the robot rotate is easy, however it has to know when to stop. In order to do this it needs to wait for certain signals to appear.\\
+
+For a Left Turn the signal sequence for the robot to stop rotating is the following:
+\begin{center}
+\begin{tikzpicture}[>=stealth',shorten >=1pt,auto,node distance=2cm]
+  \node[accepting,state] (S)      {$0$};
+  \node[state]         (q1) [right of=S]  {$1$};
+  \node[state]         (q2) [right of=q1] {$2$};
+  \node[state]         (q3) [right of=q2] {$3$};
+
+  \path[->] (S)  edge   node {$Left$} (q1);
+  \path[->] (q1) edge   node {$\overline{Left}$} (q2);
+  \path[->] (q2) edge   node {$Mid$} (q3);
+\end{tikzpicture}
+\end{center}
+\newpage
+For a Right Turn the signal sequence for the robot to stop rotating is the following:
+
+\begin{center}
+\begin{tikzpicture}[>=stealth',shorten >=1pt,auto,node distance=2cm]
+  \node[accepting,state] (S)      {$0$};
+  \node[state]         (q1) [right of=S]  {$1$};
+  \node[state]         (q2) [right of=q1] {$2$};
+  \node[state]         (q3) [right of=q2] {$3$};
+
+  \path[->] (S)  edge   node {$Right$} (q1);
+  \path[->] (q1) edge   node {$\overline{Right}$} (q2);
+  \path[->] (q2) edge   node {$Mid$} (q3);
+\end{tikzpicture}
+\end{center}
+
+\FloatBarrier
+
 \section{Path Optimizer}
 Once the robot found how the escape from the labyrinth we implement a function able to optimize
 the memorized path. This algorithm optimizes how to escape on a shortest and fastest way.\\
 In order to solve this task, we implement a truth table with the 9 possible cases to optimize the code. The truth table is described in the following table:\\
 
 
-\begin{table}[t!!]
+\begin{table}[h]
 \begin{center}
 \caption{Path Corrector Table}
 \begin{tabular}{|l|c|}
@@ -492,40 +738,22 @@ Example:
 \end{tabbing}
 
 \section{Calibration}
-In order to have a proper reading of the path we had to find a threshold value between the path reflectance value and the background reflectance value for each sensor. The threshold value could easily be found by measuring the value in both cases and setting it as the mean value. However, the light environment in which we set the threshold might not be the same as the one we will test the robot on. If the light during the test is very intense, the path might become too bright and the robot might identify it as background. We created a calibration function that would measure the  path and background reflectance value on the spot and would generate a threshold specially set, for that light intensity.
-
+In order to have a proper reading of the path we had to find a threshold value between the path reflectance value and the background reflectance value for each sensor. The threshold value could easily be found by measuring the value in both cases and setting it as the mean value. However, the light environment in which we set the threshold might not be the same as the one we will test the robot on. If the light during the test is very intense, the path might become too bright and the robot might identify it as background. To solve this problem we tested the sensor in various light environments and distances to the floor and found a threshhold that worked in all conditions. We set this value internally in our code. 
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{calib3}
 \caption{The Problem with different light intensities}
 \end{figure}
+
+
 
 \chapter{Interface}
 In our project we use two libraries for the LCD display from Adafruit. Firstly we take a look at the drawMenu function. This function is responsible for drawing the Menu on the LCD display. This function is called every few milliseconds, so if there is a change on the menu this function is responsible for updating the menu on the screen. There is also one very important global variables, the variable menuitem.The menu item remembers the selected menu item. So, if its value is 1, the first menu item is selected, so the drawMenu function must draw this menu item as black with white letters. If the menu item is 2 the second menu item is selected and so on. The menu is composed of 4 desired functions applicable by user: Follow the line, Back to the start, Find the fastest way, Reset. When the user wants to choose one of these functions, he press the button Select.
 
 At first we initialize the global variable and then the display. In the loop function, at first we call the drawMenu function to draw the menu on the screen. Then we read the value from the Button and check if the button is pressed. For example, if we are on the main screen and the first menu item is selected, if the value has increased, the menuitem variable increases and in the next loop the drawMenu function will draw the second menu item as selected. If we now press the button we navigate to the second page, where we set the value of the variable. Again using the button we can increase or decrease the value of the variable.
 
-\chapter{Testing}
-\section{Simulation}
-\section{Field Test}
-\section{Debugging}
-%%\subsection{Wrong situation reading due to misalignment}
-%One of the problems we noticed during testing is that many times the robot was going straight or right when he was supposed to be going left. This was due to the fact that the robot doesn't move perfectly straight in a line. A slight misalignment when entering  a "T" or Cross intersection might make the robot detect one branch before the other. This will make the robot think that there is only one side branch making the reading of the situation wrong.\\
-%To correct this, after the robot detects path with one of the side sensors it will move forward about 1 millimeter to make sure it is not missing path with the other sensor.
+\chapter{Conclusion}
 
-\begin{figure}[h]
-    \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{choice2}
-        \caption*{Problem}
-    \end{subfigure}
-    \quad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-      %(or a blank line to force the subfigure onto a new line)
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{choice3}
-        \caption*{Solution}
-    \end{subfigure}
-\end{figure}
-
+Taking into account the objectives we stated in the begging of the report (in subsection\ref{subsec:obj}) we were able to sucsed in creating a robot that fullfills that urpose
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Referências bibliográficas - Registo directo
@@ -533,8 +761,19 @@ At first we initialize the global variable and then the display. In the loop fun
 \begin{thebibliography}{99}
 
 \bibitem{latexcompanion} 
+ATmega48A/PA/88A/PA/168A/PA/328/P Datasheet
 
+\bibitem{Arduino} 
+Arduino - Home
+\\\texttt{https://www.arduino.cc/}
 
+\bibitem{citation} 
+How to Make a Line Follower Robot in 10 Minutes | DIY Hacking
+\\\texttt{https://diyhacking.com/make-line-follower-robot/}
+
+\bibitem{citation} 
+AVR LIBC HOME PAGE,
+\\\texttt{http://www.nongnu.org/avr-libc/}
 
 
 

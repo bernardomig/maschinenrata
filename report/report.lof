@@ -1,22 +1,22 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Hardware components scheme\relax }}{7}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces how the light sensors work\relax }}{9}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Light reflective sensor\relax }}{9}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces How the ultrasonic sensor works\relax }}{10}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Ultrasonic Sensor\relax }}{10}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Arduino UNO\relax }}{11}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Arduino Pin Mapping\relax }}{12}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Soldering the Double H Bridge\relax }}{14}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Double H Bridge wiring Diagram\relax }}{14}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Hardware components scheme\relax }}{8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces how the light sensors work\relax }}{10}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Light reflective sensor\relax }}{10}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces How the ultrasonic sensor works\relax }}{11}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Ultrasonic Sensor\relax }}{11}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Arduino UNO\relax }}{12}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Arduino Pin Mapping\relax }}{13}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Soldering the Double H Bridge\relax }}{15}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Double H Bridge wiring Diagram\relax }}{15}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Misallignment detection\relax }}{17}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The 8 situations\relax }}{18}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Wrong situation reading due to misalignment\relax }}{19}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Left-Priority maze run \relax }}{20}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Flowchart of Path Optimizer\relax }}{22}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces The Problem with different light intensities\relax }}{23}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Orientation modes\relax }}{20}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The 8 situations\relax }}{21}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Left-Priority maze run \relax }}{24}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Flowchart of Path Optimizer\relax }}{26}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces The Problem with different light intensities\relax }}{27}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
